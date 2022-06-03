@@ -1,0 +1,10 @@
+@mixin framed_title($color){
+  display: inline-block;
+  color: white;
+  background: $color;
+  padding: 0.1em 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 7px 7px 0 rgba(0,0,0,0.2);
+}
+
