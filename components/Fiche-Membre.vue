@@ -13,12 +13,24 @@
 <script>
 export default {
   name: 'FicheMembre',
-  props: [
-    'name',
-    'age',
-    'description',
-    'theme'
-  ]
+  props: {
+    name: {
+      type: String,
+      default: 'John'
+    },
+    description: {
+      type: String,
+      default: 'Inconnu'
+    },
+    age: {
+      type: Number,
+      default: 0
+    },
+    theme: {
+      type: Number,
+      default: 1
+    }
+  }
 }
 </script>
 
