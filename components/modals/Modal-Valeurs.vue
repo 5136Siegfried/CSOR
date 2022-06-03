@@ -13,9 +13,11 @@
         <p>
           Le CSOR est né d’une problématique plus insidieuse qui concerne la santé, physique ou mentale. Les gens dans
           la rue sont souvent confrontés à des maladies, des blessures ou des handicaps qui, dans un contexte de vie
-          saine seraient facilement gérables. <strong>Dans la rue, ils peuvent prendre une ampleur différente, depuis la
-          petite plaie qui s’infecte aux angoisses sociales qui rendent toutes démarches et recherches d’aide
-          difficiles</strong>. C’est en se basant sur cette compréhension que nous avons défini les valeurs que porte
+          saine seraient facilement gérables.
+          <strong>Dans la rue, ils peuvent prendre une ampleur différente, depuis la
+            petite plaie qui s’infecte aux angoisses sociales qui rendent toutes démarches et recherches d’aide
+            difficiles
+          </strong>. C’est en se basant sur cette compréhension que nous avons défini les valeurs que porte
           notre association :
         </p>
 

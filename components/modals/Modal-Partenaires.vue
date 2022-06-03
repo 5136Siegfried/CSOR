@@ -25,11 +25,13 @@
             <img
               src="~/assets/img/partenaires/Mairie-bordeaux.jpg"
               alt="Mairie de Bordeaux"
-              title="Mairie de Bordeaux" >
+              title="Mairie de Bordeaux"
+            >
             <img
               src="~/assets/img/partenaires/CHU.jpg"
               alt="CHU de Bordeaux"
-              title="CHU de Bordeaux" >
+              title="CHU de Bordeaux"
+            >
             <img
               src="~/assets/img/partenaires/CEID.jpg"
               alt="CEID"
