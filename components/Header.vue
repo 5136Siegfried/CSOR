@@ -47,31 +47,38 @@ header{
     li a{
       position: relative;
       z-index: 5;
-      &:hover::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 25%;
-        width: 0;
-        height: 100%;
-        opacity: 0;
-        background: $red;
-        z-index: -1;
-        animation: 0.5s shape ease-in-out forwards;
-      }
+      padding: 1em;
     }
   }
-  nav.nav_left ul li{
+  nav.nav_left ul li a{
     font-weight: 500;
-    //grid-column-start: 1;
-    //grid-column-end: 2;
+    &:hover{
+      font-weight: 700;
+      //font-size: 1.2em;
+    }
   }
   nav.nav_right ul li a{
-    //grid-column-start: 3;
     font-size :1.5rem;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
+    transition: 0.7s;
+    &:hover::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: 30%;
+      width: 0;
+      height: 40%;
+      opacity: 0;
+      background: $red;
+      z-index: -1;
+      animation: 0.5s shape ease-in-out forwards;
+    }
+    &:hover{
+      font-size: 1.7em;
+      //font-weight: 900;
+    }
   }
   .logo{
     display: block;
@@ -87,10 +94,9 @@ header{
     box-shadow: 0 0 15px rgba(108, 122, 137, 0.5);
   }
 }
-
 @keyframes shape {
   to {
-    width: 50%;
+    width: 40%;
     opacity: 1;
     transform: rotate(-7deg);
   }

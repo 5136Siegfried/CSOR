@@ -88,6 +88,7 @@ export default {
   h2 {
     position: absolute;
     z-index: 5;
+    transition: all $transition_duration ease-in-out;
 
     span {
       display: inline;
@@ -136,6 +137,9 @@ export default {
     &:hover .hover {
       animation: appear 0.5s ease-in-out forwards;
     }
+  }
+  &:hover h2{
+    transform: scale(1.3);
   }
 }
 
