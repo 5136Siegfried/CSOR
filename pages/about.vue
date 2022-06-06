@@ -1,6 +1,5 @@
 <template>
   <div class="site">
-    <Header />
     <h1><b>Qui</b> sommes-nous ?</h1>
     <div class="content">
       <div

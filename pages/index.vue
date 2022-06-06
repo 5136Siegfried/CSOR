@@ -1,6 +1,5 @@
 <template>
   <div class="site">
-    <Header />
     <div class="home">
       <section class="left">
         <div class="content">

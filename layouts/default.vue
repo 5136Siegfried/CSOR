@@ -1,12 +1,13 @@
 <template>
-  <div class="site">
-    <h1>Nous rejoindre !</h1>
+  <div>
+    <Header />
+    <Nuxt />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Join'
+  name: 'Page'
 }
 </script>
 

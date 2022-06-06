@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-    <Header />
+    <!--    <Header />-->
     <h1>Nos <b>actions</b></h1>
     <div class="content">
       <div class="bloc bloc1">
@@ -61,6 +61,7 @@ export default {
     ModalPartenaires,
     ModalFormations
   },
+  // layout: 'page',
   data () {
     return {
       showModal: null
