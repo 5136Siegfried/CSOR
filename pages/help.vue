@@ -1,6 +1,34 @@
 <template>
   <div class="site">
-    <h1>Nous aider !</h1>
+    <h1>Être <b>Mécène</b></h1>
+    <div class="page_wrapper">
+      <img src="~/assets/img/help.jpg" alt="Photo d'un cochon tirelire'">
+      <div class="page_wrapper__content">
+        <p>
+          Parce que nous avons besoin de moyens pour financer notre matériel médical et nos consommables pour les soins, toute aide financière est la bienvenue. De plus, nous avons pour objectif d’acquérir les équipements nécessaires à la sécurité de nos bénévoles lors des maraudes, et ainsi que du matériel pédagogique pour nos formations internes.
+        </p>
+        <div class="page_wrapper__content__text__donation">
+          <h4>Je fais un don :</h4>
+          <ul class="donation_list">
+            <li class="donation_list_little donation_list_little_1">
+              <a href="https://www.helloasso.com/associations/csor/formulaires/1" target="_blank">1€</a>
+            </li>
+            <li class="donation_list_little donation_list_little_5">
+              <a href="https://www.helloasso.com/associations/csor/formulaires/1" target="_blank">5€</a>
+            </li>
+            <li class="donation_list_little donation_list_little_20">
+              <a href="https://www.helloasso.com/associations/csor/formulaires/1" target="_blank">20€</a>
+            </li>
+            <li class="donation_list_little donation_list_big">
+              <a href="https://www.helloasso.com/associations/csor/formulaires/1" target="_blank">Ce que vous voulez !</a>
+            </li>
+          </ul>
+        </div>
+        <p class="schoko">
+          (On accepte aussi les chèques, les espèces et les Schokobon !)
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -10,6 +38,60 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.page_wrapper__content{
+  .schoko{
+    color: $blue;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+.page_wrapper__content__text__donation{
+  margin-top: 5rem;
+  padding: 3rem;
+  border: 4px solid $blue;
+  border-radius: 30px;
+h4{
+  color: $blue;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+  .donation_list{
+    margin-top: 2rem;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+"l1 l5 l20"
+"big big big";
+    &_little{
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      background: $blue;
+      border-radius: 30px;
+      cursor: pointer;
+      &_1{
+        grid-area: l1;
+      }
+      &_5{
+        grid-area: l5;
+      }
+      &_20{
+        grid-area: l20;
+      }
+      &:hover{
+        background: $red;
+      }
+    }
+    &_big{
+      grid-area: big;
+    }
+    a{
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
 </style>

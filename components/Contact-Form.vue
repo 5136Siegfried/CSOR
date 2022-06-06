@@ -4,6 +4,7 @@
     <input id="name" type="text" name="name" placeholder="Nom et Prénom" autocomplete="off">
     <input id="email" type="email" name="email" placeholder="Email" autocomplete="off">
     <textarea id="message" name="message" cols="30" rows="10" placeholder="Votre Message" />
+    <input type="submit" value="Envoyer">
   </form>
 </template>
 
@@ -36,6 +37,23 @@ form{
     border-radius: 10px;
     &::placeholder{
       color: black;
+    }
+  }
+  input[type="submit"]{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: transparent;
+    padding: 0.5rem 2rem;
+    margin: auto;
+    border: 4px solid white;
+    border-radius: 20px;
+    width: 50%;
+    cursor: pointer;
+
+    &:hover{
+      color: black;
+      background: white;
     }
   }
 }
