@@ -2,7 +2,7 @@
   <header>
     <nav class="nav_left">
       <ul>
-        <li><a href="/about">Qui somme nous ?</a></li>
+        <li><a href="/about">Qui somme-nous ?</a></li>
         <li><a href="/actions">Nos actions</a></li>
         <li>Les actus</li>
         <li>La boutique</li>
