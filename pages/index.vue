@@ -94,7 +94,7 @@ section .content {
 }
 
 .icons {
-  margin-top: 20px;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
