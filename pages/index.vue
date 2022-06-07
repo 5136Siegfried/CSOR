@@ -98,8 +98,11 @@ section .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  //gap: 50px;
   color: white;
   cursor: pointer;
+  li{
+    margin: 0 25px
+  }
 }
 </style>
