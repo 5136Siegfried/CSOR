@@ -1,32 +1,34 @@
 <template>
   <div class="site">
-    <h1><b>Qui</b> sommes-nous ?</h1>
-    <div class="content">
-      <div
-        class="bloc bloc1"
-        @click="showModalOrigines = true"
-      >
-        <p>Nos origines</p>
-        <div class="hover">
-          <p>En savoir <br>plus</p>
+    <div class="site__wrapper">
+      <h1><b>Qui</b> sommes-nous ?</h1>
+      <div class="content">
+        <div
+          class="bloc bloc1"
+          @click="showModalOrigines = true"
+        >
+          <p>Nos origines</p>
+          <div class="hover">
+            <p>En savoir <br>plus</p>
+          </div>
+        </div>
+        <div class="bloc bloc2" @click="showModalBenevoles = true">
+          <p>Nos bénévoles</p>
+          <div class="hover">
+            <p>En savoir <br>plus</p>
+          </div>
+        </div>
+        <div class="bloc bloc3" @click="showModalValeurs = true">
+          <p>Nos valeurs</p>
+          <div class="hover">
+            <p>En savoir <br>plus</p>
+          </div>
         </div>
       </div>
-      <div class="bloc bloc2" @click="showModalBenevoles = true">
-        <p>Nos bénévoles</p>
-        <div class="hover">
-          <p>En savoir <br>plus</p>
-        </div>
-      </div>
-      <div class="bloc bloc3" @click="showModalValeurs = true">
-        <p>Nos valeurs</p>
-        <div class="hover">
-          <p>En savoir <br>plus</p>
-        </div>
-      </div>
+      <ModalOrigines v-if="showModalOrigines" @close-modal="showModalOrigines = false" />
+      <ModalBenevoles v-if="showModalBenevoles" @close-modal="showModalBenevoles = false" />
+      <ModalValeurs v-if="showModalValeurs" @close-modal="showModalValeurs = false" />
     </div>
-    <ModalOrigines v-if="showModalOrigines" @close-modal="showModalOrigines = false" />
-    <ModalBenevoles v-if="showModalBenevoles" @close-modal="showModalBenevoles = false" />
-    <ModalValeurs v-if="showModalValeurs" @close-modal="showModalValeurs = false" />
   </div>
 </template>
 
@@ -75,27 +77,34 @@ export default {
 
     &.bloc1 {
       opacity: 0.4;
-      & .hover{
+
+      & .hover {
         background: url("~/assets/img/origines_hover.jpg");
       }
     }
+
     &.bloc2 {
       opacity: 0.6;
-      & .hover{
+
+      & .hover {
         background: url("~/assets/img/benevoles_hover.jpg");
       }
     }
+
     &.bloc3 {
       opacity: 0.8;
-      & .hover{
+
+      & .hover {
         background: url("~/assets/img/valeurs_hover.jpg");
       }
     }
+
     p {
       font-size: 2rem;
       font-weight: 400;
     }
-    .hover{
+
+    .hover {
       position: absolute;
       display: flex;
       justify-content: center;
@@ -105,15 +114,18 @@ export default {
       width: 100%;
       height: 100%;
       transition: 0.5s;
-      p{
+
+      p {
         text-align: center;
         font-weight: 700;
       }
     }
-    &:hover{
+
+    &:hover {
       opacity: 1;
     }
-    &:hover .hover{
+
+    &:hover .hover {
       top: 0;
     }
   }

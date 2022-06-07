@@ -1,51 +1,53 @@
 <template>
   <div class="site">
-    <!--    <Header />-->
-    <h1>Nos <b>actions</b></h1>
-    <div class="content">
-      <div class="bloc bloc1">
-        <h2>Les maraudes <span>de soin</span></h2>
-        <div class="img_container">
-          <img
-            src="~/assets/img/maraudes_original.jpg"
-            width="425"
-            alt="photo de maraude"
-          >
-          <div class="hover" @click="showModal = 'maraudes'">
-            <p>En savoir plus</p>
+    <div class="site__wrapper">
+      <!--    <Header />-->
+      <h1>Nos <b>actions</b></h1>
+      <div class="content">
+        <div class="bloc bloc1">
+          <h2>Les maraudes <span>de soin</span></h2>
+          <div class="img_container">
+            <img
+              alt="photo de maraude"
+              src="~/assets/img/maraudes_original.jpg"
+              width="425"
+            >
+            <div class="hover" @click="showModal = 'maraudes'">
+              <p>En savoir plus</p>
+            </div>
+          </div>
+        </div>
+        <div class="bloc bloc2">
+          <h2>L'encadrement <span>sanitaire</span></h2>
+          <div class="img_container">
+            <img
+              alt="photo restau du coeur"
+              src="~/assets/img/sanitaire_original.jpg"
+              width="425"
+            >
+            <div class="hover" @click="showModal = 'sanitaire'">
+              <p>En savoir plus</p>
+            </div>
+          </div>
+        </div>
+        <div class="bloc bloc3">
+          <h2>Les ateliers <span>de formation</span></h2>
+          <div class="img_container">
+            <img
+              alt="photo de formation du csor"
+              src="~/assets/img/formation.jpg"
+              width="425"
+            >
+            <div class="hover" @click="showModal = 'formations'">
+              <p>En savoir plus</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="bloc bloc2">
-        <h2>L'encadrement <span>sanitaire</span></h2>
-        <div class="img_container">
-          <img
-            src="~/assets/img/sanitaire_original.jpg"
-            width="425"
-            alt="photo restau du coeur"
-          >
-          <div class="hover" @click="showModal = 'sanitaire'">
-            <p>En savoir plus</p>
-          </div>
-        </div>
-      </div>
-      <div class="bloc bloc3">
-        <h2>Les ateliers <span>de formation</span></h2>
-        <div class="img_container">
-          <img
-            src="~/assets/img/formation.jpg"
-            width="425"
-            alt="photo de formation du csor"
-          >
-          <div class="hover" @click="showModal = 'formations'">
-            <p>En savoir plus</p>
-          </div>
-        </div>
-      </div>
+      <ModalMaraudes v-if="showModal === 'maraudes'" @close-modal="showModal = null" />
+      <ModalPartenaires v-if="showModal === 'sanitaire'" @close-modal="showModal = null" />
+      <ModalFormations v-if="showModal === 'formations'" @close-modal="showModal = null" />
     </div>
-    <ModalMaraudes v-if="showModal === 'maraudes'" @close-modal="showModal = null" />
-    <ModalPartenaires v-if="showModal === 'sanitaire'" @close-modal="showModal = null" />
-    <ModalFormations v-if="showModal === 'formations'" @close-modal="showModal = null" />
   </div>
 </template>
 
@@ -140,7 +142,8 @@ export default {
       animation: appear 0.5s ease-in-out forwards;
     }
   }
-  &:hover h2{
+
+  &:hover h2 {
     transform: scale(1.3);
   }
 }

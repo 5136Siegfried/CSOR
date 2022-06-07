@@ -34,8 +34,10 @@ h1 {
 
 .site{
   position: relative;
+  &__wrapper{
   max-width: 1920px;
   margin: auto;
+  }
 }
 .page_wrapper{
   margin: 0 3em;

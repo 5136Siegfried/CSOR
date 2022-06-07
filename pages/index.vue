@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-    <div class="home">
+    <div class="site__wrapper">
       <section class="left">
         <div class="content">
           <p class="citation">
@@ -18,7 +18,7 @@
           <li><img src="~/assets/img/icons/mail.svg" alt="Email" @click="display = 'mail'"></li>
           <li><img src="~/assets/img/icons/phone.svg" alt="Téléphone" @click="display = 'phone'"></li>
           <li><img src="~/assets/img/icons/fb.svg" alt="Facebook"></li>
-          <li><img src="~/assets/img/icons/instagram.svg" alt="Instagrame"></li>
+          <li><img src="~/assets/img/icons/instagram.svg" alt="Instagram"></li>
           <li><img src="~/assets/img/icons/youtube.svg" alt="Youtube"></li>
           <li><img src="~/assets/img/icons/google.svg" alt="Google"></li>
         </ul>
@@ -44,8 +44,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.site {
+  background: center/cover url("~/assets/img/home_bg.jpg") no-repeat;
+}
 
-.home {
+.site__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: 1fr;
@@ -53,7 +56,6 @@ export default {
   align-items: center;
   color: white;
   height: calc(100vh - 80px);
-  background: center/cover url("~/assets/img/home_bg.jpg") no-repeat;
 }
 
 section {
@@ -94,14 +96,15 @@ section .content {
 }
 
 .icons {
-  margin: 20px 0;
+  margin: 20px 0 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   //gap: 50px;
   color: white;
   cursor: pointer;
-  li{
+
+  li {
     margin: 0 25px
   }
 }

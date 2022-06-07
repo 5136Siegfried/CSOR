@@ -1,23 +1,27 @@
 <template>
   <div class="site">
-    <h1>Du matériel <br><b>en trop ?</b></h1>
-    <div class="page_wrapper">
-      <img src="~/assets/img/donation.jpg" alt="Photo d'équipement médicale'">
-      <div class="page_wrapper__content">
-        <p>
-          Parce que vous avez peut-être envie de nous aider autrement, nous serons heureux de récupérer votre matériel médical non-utilisé. Vous pouvez aussi vous rendre dans votre pharmacie avec une liste du matériel dont nous avons régulièrement besoin pour faire participer votre pharmacien-ne à notre action !
-        </p>
-        <p>
-          N’hésitez pas à nous demander si vous voulez plus d’informations à ce sujet.
-        </p>
-        <button class="btn btn-red">
-          Je consulte la liste
-        </button>
-        <div class="page_wrapper__content__text__donation">
-          <h4>J'ai du matériel<br> pour vous !</h4>
-          <button class="btn btn-blue">
-            Contact
+    <div class="site__wrapper">
+      <h1>Du matériel <br><b>en trop ?</b></h1>
+      <div class="page_wrapper">
+        <img src="~/assets/img/donation.jpg" alt="Photo d'équipement médicale'">
+        <div class="page_wrapper__content">
+          <p>
+            Parce que vous avez peut-être envie de nous aider autrement, nous serons heureux de récupérer votre matériel
+            médical non-utilisé. Vous pouvez aussi vous rendre dans votre pharmacie avec une liste du matériel dont nous
+            avons régulièrement besoin pour faire participer votre pharmacien-ne à notre action !
+          </p>
+          <p>
+            N’hésitez pas à nous demander si vous voulez plus d’informations à ce sujet.
+          </p>
+          <button class="btn btn-red">
+            Je consulte la liste
           </button>
+          <div class="page_wrapper__content__text__donation">
+            <h4>J'ai du matériel<br> pour vous !</h4>
+            <button class="btn btn-blue">
+              Contact
+            </button>
+          </div>
         </div>
       </div>
     </div>

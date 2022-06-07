@@ -1,21 +1,24 @@
 <template>
   <div class="site">
-    <h1>Envie d'<b>agir ?</b></h1>
-    <div class="page_wrapper">
-      <img src="~/assets/img/join.jpg" alt="Photo de la team du CSOR">
-      <div class="page_wrapper__content">
-        <div class="page_wrapper__content__text">
-          <p>
-            Parce que nous favorisons la diversité des parcours de vie et des sensibilités de chaque bénévole, tu
-            es le ou la bienvenue dans nos maraudes, que tu sois de profession médicale, secouriste ou absolument pas !
-          </p>
-          <form @submit.prevent>
-            <h3>Laisse un message !</h3>
-            <input id="name" type="text" name="name" placeholder="Nom et Prénom" autocomplete="off">
-            <input id="email" type="email" name="email" placeholder="Email" autocomplete="off">
-            <textarea id="message" name="message" cols="30" rows="7" placeholder="Votre Message" />
-            <input type="submit" value="Et hop c'est partie !">
-          </form>
+    <div class="site__wrapper">
+      <h1>Envie d'<b>agir ?</b></h1>
+      <div class="page_wrapper">
+        <img alt="Photo de la team du CSOR" src="~/assets/img/join.jpg">
+        <div class="page_wrapper__content">
+          <div class="page_wrapper__content__text">
+            <p>
+              Parce que nous favorisons la diversité des parcours de vie et des sensibilités de chaque bénévole, tu
+              es le ou la bienvenue dans nos maraudes, que tu sois de profession médicale, secouriste ou absolument pas
+              !
+            </p>
+            <form @submit.prevent>
+              <h3>Laisse un message !</h3>
+              <input id="name" autocomplete="off" name="name" placeholder="Nom et Prénom" type="text">
+              <input id="email" autocomplete="off" name="email" placeholder="Email" type="email">
+              <textarea id="message" cols="30" name="message" placeholder="Votre Message" rows="7" />
+              <input type="submit" value="Et hop c'est partie !">
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -29,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-form{
+form {
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -38,23 +41,27 @@ form{
   padding: 2rem;
   border: 4px solid $blue;
   border-radius: 30px;
-  h3{
+
+  h3 {
     color: $blue;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
   }
-  input, textarea{
+
+  input, textarea {
     padding: 0.5rem 1rem;
     background: lighten($blue, 58);
     outline: none;
     border: none;
     border-radius: 10px;
-    &::placeholder{
+
+    &::placeholder {
       color: white;
     }
   }
-  input[type="submit"]{
+
+  input[type="submit"] {
     color: white;
     background: $blue;
     font-size: 1.2rem;
@@ -66,7 +73,7 @@ form{
     //width: auto;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       color: white;
       background: $red;
     }
