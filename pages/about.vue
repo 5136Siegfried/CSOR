@@ -57,7 +57,7 @@ export default {
 .content {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  //gap: 50px;
   margin-top: 50px;
 
   .bloc {
@@ -69,6 +69,7 @@ export default {
     align-items: center;
     width: 362px;
     height: 362px;
+    margin: 2rem;
     cursor: pointer;
     overflow: hidden;
 

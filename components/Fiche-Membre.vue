@@ -39,6 +39,7 @@ export default {
   color: white;
   position: relative;
   width: 200px;
+  margin: 0 10px;
   img{
     //width: 100%;
   }

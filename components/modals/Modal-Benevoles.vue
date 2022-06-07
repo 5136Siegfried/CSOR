@@ -90,7 +90,7 @@ export default {
 <style lang="scss" scoped>
 .prez {
   display: flex;
-  gap: 30px;
+  //gap: 30px;
 
   .content {
     flex: 1;

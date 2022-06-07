@@ -75,7 +75,7 @@ export default {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  //gap: 2rem;
 
   h2 {
     text-align: center;
@@ -85,6 +85,7 @@ export default {
 
 .bloc {
   position: relative;
+  margin: 2rem;
 
   h2 {
     position: absolute;
