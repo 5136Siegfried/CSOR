@@ -61,7 +61,8 @@ header{
     font-size :1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    transition: 0.7s;
+    transition: font-size 0.7s;
+    -webkit-transition: font-size 0.7s;
     &:hover::after {
       content: "";
       display: block;
