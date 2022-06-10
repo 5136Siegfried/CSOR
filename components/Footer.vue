@@ -21,16 +21,22 @@ export default {
 
 <style lang="scss" scoped>
 footer{
-  position: absolute;
+  //position: absolute;
+  //bottom: 0;
   width: 100%;
   padding: 0.5rem 2rem;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   background: rgba(229, 229, 229, 0.5);
   ul{
     display: flex;
     gap: 2rem;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
   }
 }
 </style>
