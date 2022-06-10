@@ -27,8 +27,8 @@ export default {
       default: 0
     },
     theme: {
-      type: Number,
-      default: 1
+      type: String,
+      default: '1'
     }
   }
 }

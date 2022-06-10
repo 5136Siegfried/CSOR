@@ -28,7 +28,8 @@ export default {
     '~/assets/scss/fonts.scss',
     '~/assets/scss/colors.scss',
     '~/assets/scss/mixins.scss',
-    '~/assets/scss/global.scss'
+    '~/assets/scss/global.scss',
+    '~/assets/scss/media.scss'
   ],
   styleResources: {
     scss: ['./assets/scss/*.scss']
@@ -44,7 +45,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/device'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
