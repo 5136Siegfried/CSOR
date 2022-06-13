@@ -49,8 +49,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.title span:before{
+  background: $blue!important;
+}
 .page_action__content{
-  grid-area: content;
   .schoko{
     color: $blue;
     font-weight: 700;
@@ -99,9 +101,22 @@ h4{
     &_big{
       grid-area: big;
     }
+    li{
+      padding: 0.2em 0.5em;
+    }
     a{
       display: inline-block;
       width: 100%;
+      font-weight: 500;
+    }
+    @media screen and (max-width: 350px) {
+      display: flex;
+      flex-direction: column;
+
+      li{
+        font-size: 2rem;
+        padding: 0.2em 0.5em
+      }
     }
   }
 }

@@ -3,7 +3,6 @@
     <div class="site__wrapper">
       <Header/>
       <h1>Les news !</h1>
-      <Footer/>
     </div>
   </div>
 </template>
