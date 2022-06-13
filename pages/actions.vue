@@ -11,6 +11,7 @@
               alt="photo de maraude"
               src="~/assets/img/maraudes_original.jpg"
               width="425"
+              @click="showModal = 'maraudes'"
             >
             <div class="hover" @click="showModal = 'maraudes'">
               <p>En savoir plus</p>
@@ -24,6 +25,7 @@
               alt="photo restau du coeur"
               src="~/assets/img/sanitaire_original.jpg"
               width="425"
+              @click="showModal = 'sanitaire'"
             >
             <div class="hover" @click="showModal = 'sanitaire'">
               <p>En savoir plus</p>
@@ -37,6 +39,7 @@
               alt="photo de formation du csor"
               src="~/assets/img/formation.jpg"
               width="425"
+              @click="showModal = 'formations'"
             >
             <div class="hover" @click="showModal = 'formations'">
               <p>En savoir plus</p>
@@ -82,6 +85,11 @@ export default {
   h2 {
     text-align: center;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -145,6 +153,15 @@ export default {
 
   &:hover h2 {
     transform: scale(1.3);
+  }
+
+  @media screen and (max-width: 445px) {
+    width: 80%;
+    margin: 3rem 0;
+    .img_container{
+      width: 100%;
+      height: 345px;
+    }
   }
 }
 

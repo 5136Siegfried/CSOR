@@ -1,8 +1,6 @@
 <template>
   <header>
-    <button v-if="$device.isMobileOrTablet" id="burger" @click="isActive = ! isActive">
-      Burger
-    </button>
+    <div id="burger" @click="isActive = !isActive">Menu</div>
     <div class="header__wrapper" :class="{active : isActive}">
       <nav class="nav_left">
         <ul>
@@ -71,7 +69,7 @@ header{
     li a{
       position: relative;
       z-index: 5;
-      padding: 1em;
+      //padding: 1em;
     }
   }
   > a{
@@ -81,10 +79,19 @@ header{
     @media screen and (max-width: 1024px) {
       text-align: right;
       font-size: 1.5rem;
+      margin-right: 1.5em;
     }
   }
   nav.nav_right ul li{
-    font-size: 1.5rem;
+    //font-size: 1.5rem;
+    font-size: calc(20 * var(--res));
+
+    @media screen and (max-width: 1268px){
+      font-size: calc(18 * var(--res));
+    }
+    @media screen and (max-width: 1140px){
+      font-size: calc(16 * var(--res));
+    }
     @media screen and (max-width: 1024px) {
       text-align: center;
       font-size: 2rem;
@@ -105,24 +112,25 @@ header{
     }
   }
   nav.nav_right ul li a{
-    transition: font-size 0.7s;
-    -webkit-transition: font-size 0.7s;
-    &:hover::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 25%;
-      left: 30%;
-      width: 0;
-      height: 40%;
-      opacity: 0;
-      background: $red;
-      z-index: -1;
-      animation: 0.5s shape ease-in-out forwards;
-    }
+    transition: all 0.7s;
+    display: inline-block;
     &:hover{
-      font-size: 1.3em;
-      //font-weight: 900;
+      transform: scale(1.2);
+    }
+    @media screen and (min-width: 1024px) {
+      &:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15%;
+        left: 40%;
+        width: 0;
+        height: 80%;
+        opacity: 0;
+        background: $red;
+        z-index: -1;
+        animation: 0.5s shape ease-in-out forwards;
+      }
     }
   }
   nav.nav_right ul li a span{
@@ -181,20 +189,25 @@ header{
     transition: transform 0.3s ease-in-out;
   }
 }
+#burger{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 50px;
+  right: 50px;
+  background: red;
+  padding: 1em;
+  cursor: pointer;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}
 .header__wrapper.active{
   transform: translateX(0);
 }
-#burger{
-  position: absolute;
-  z-index: 100;
-  top: 30px;
-  right: 30px;
-  background: transparent;
-  color: white;
-}
 @keyframes shape {
   to {
-    width: 40%;
+    width: 50%;
     opacity: 1;
     transform: rotate(-7deg);
   }

@@ -1,13 +1,16 @@
 <template>
   <div class="site">
     <div class="site__wrapper">
-      <h1>Du matériel <br><b>en trop ?</b></h1>
-      <div class="page_wrapper">
-        <img src="~/assets/img/donation.jpg" alt="Photo d'équipement médicale'">
-        <div class="page_wrapper__content">
+      <div class="page_action">
+        <div class="title">Nous <span>équiper</span></div>
+        <h1 class="page_action__title">Du matériel <br><b>en trop ?</b></h1>
+        <img class="page_action__image" src="~/assets/img/donation.jpg" alt="Photo d'équipement médicale'">
+        <div class="page_action__content">
           <p>
-            Parce que vous avez peut-être envie de nous aider autrement, nous serons heureux de récupérer votre matériel
-            médical non-utilisé. Vous pouvez aussi vous rendre dans votre pharmacie avec une liste du matériel dont nous
+            Parce que vous avez peut-être envie de nous aider autrement, nous serons heureux de récupérer votre
+            matériel
+            médical non-utilisé. Vous pouvez aussi vous rendre dans votre pharmacie avec une liste du matériel dont
+            nous
             avons régulièrement besoin pour faire participer votre pharmacien-ne à notre action !
           </p>
           <p>
@@ -35,12 +38,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 b{
-  line-height: 0.5em;
-}
+//h1 b{
+//  line-height: 0.5em;
+//}
 button{
   display: block;
   margin: auto;
+  &.btn-red{
+    margin-top: 2rem;
+  }
   &.btn-blue{
     margin-top: 1rem;
   }

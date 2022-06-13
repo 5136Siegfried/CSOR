@@ -12,6 +12,12 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+Footer{
+  position: fixed;
+  bottom: 0;
+  @media screen and (max-width: 1024px) {
+    position: relative;
+  }
+}
 </style>

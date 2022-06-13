@@ -1,14 +1,17 @@
 <template>
   <div class="site">
     <div class="site__wrapper">
-      <h1>Être <b>Mécène</b></h1>
-      <div class="page_wrapper">
-        <img src="~/assets/img/help.jpg" alt="Photo d'un cochon tirelire'">
-        <div class="page_wrapper__content">
+      <div class="page_action">
+        <div class="title">Nous <span>aider</span></div>
+        <h1 class="page_action__title">Être <b>Mécène</b></h1>
+        <img class="page_action__image" src="~/assets/img/help.jpg" alt="Photo d'un cochon tirelire'">
+        <div class="page_action__content">
           <p>
             Parce que nous avons besoin de moyens pour financer notre matériel médical et nos consommables pour les
-            soins, toute aide financière est la bienvenue. De plus, nous avons pour objectif d’acquérir les équipements
-            nécessaires à la sécurité de nos bénévoles lors des maraudes, et ainsi que du matériel pédagogique pour nos
+            soins, toute aide financière est la bienvenue. De plus, nous avons pour objectif d’acquérir les
+            équipements
+            nécessaires à la sécurité de nos bénévoles lors des maraudes, et ainsi que du matériel pédagogique pour
+            nos
             formations internes.
           </p>
           <div class="page_wrapper__content__text__donation">
@@ -24,7 +27,8 @@
                 <a href="https://www.helloasso.com/associations/csor/formulaires/1" target="_blank">20€</a>
               </li>
               <li class="donation_list_little donation_list_big">
-                <a href="https://www.helloasso.com/associations/csor/formulaires/1" target="_blank">Ce que vous voulez
+                <a href="https://www.helloasso.com/associations/csor/formulaires/1" target="_blank">Ce que vous
+                  voulez
                   !</a>
               </li>
             </ul>
@@ -45,7 +49,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page_wrapper__content{
+.page_action__content{
+  grid-area: content;
   .schoko{
     color: $blue;
     font-weight: 700;

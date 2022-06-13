@@ -61,7 +61,6 @@ export default {
   justify-content: center;
   //gap: 50px;
   margin-top: 50px;
-
   .bloc {
     position: relative;
     color: white;
@@ -128,6 +127,10 @@ export default {
     &:hover .hover {
       top: 0;
     }
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>

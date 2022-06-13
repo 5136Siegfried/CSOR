@@ -1,25 +1,27 @@
 <template>
   <div class="site">
     <div class="site__wrapper">
-      <h1>Envie d'<b>agir ?</b></h1>
-      <div class="page_wrapper">
-        <img alt="Photo de la team du CSOR" src="~/assets/img/join.jpg">
-        <div class="page_wrapper__content">
-          <div class="page_wrapper__content__text">
-            <p>
-              Parce que nous favorisons la diversité des parcours de vie et des sensibilités de chaque bénévole, tu
-              es le ou la bienvenue dans nos maraudes, que tu sois de profession médicale, secouriste ou absolument pas
-              !
-            </p>
-            <form @submit.prevent>
-              <h3>Laisse un message !</h3>
-              <input id="name" autocomplete="off" name="name" placeholder="Nom et Prénom" type="text">
-              <input id="email" autocomplete="off" name="email" placeholder="Email" type="email">
-              <textarea id="message" cols="30" name="message" placeholder="Votre Message" rows="7" />
-              <input type="submit" value="Et hop c'est partie !">
-            </form>
+      <div class="page_action">
+        <div class="title">Nous <span>rejoindre</span></div>
+        <h1 class="page_action__title">Envie d'<b>agir ?</b></h1>
+        <img class="page_action__image" alt="Photo de la team du CSOR" src="~/assets/img/join.jpg">
+        <div class="page_action__content">
+            <div class="page_wrapper__content__text">
+              <p>
+                Parce que nous favorisons la diversité des parcours de vie et des sensibilités de chaque bénévole, tu
+                es le ou la bienvenue dans nos maraudes, que tu sois de profession médicale, secouriste ou absolument
+                pas
+                !
+              </p>
+              <form @submit.prevent>
+                <h3>Laisse un message !</h3>
+                <input id="name" autocomplete="off" name="name" placeholder="Nom et Prénom" type="text">
+                <input id="email" autocomplete="off" name="email" placeholder="Email" type="email">
+                <textarea id="message" cols="30" name="message" placeholder="Votre Message" rows="7"/>
+                <input type="submit" value="Et hop c'est partie !">
+              </form>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
