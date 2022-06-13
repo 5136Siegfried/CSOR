@@ -208,7 +208,6 @@ header{
     user-select: none;
   }
   @media screen and (max-width: 1024px) {
-    display: block;
     display: flex;
     justify-content: center;
     align-items : center;
