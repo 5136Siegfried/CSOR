@@ -1,7 +1,8 @@
 <template>
   <header>
     <div id="burger" @click="isActive = !isActive">
-      <img src="~/assets/img/CharmMenuHamburger.svg" alt="Menu">
+      <img v-if="!isActive" src="~/assets/img/CharmMenuHamburger.svg" alt="Open menu">
+      <img v-else src="~/assets/img/IconsCross.svg" alt="Close Menu">
     </div>
     <div class="header__wrapper" :class="{active : isActive}">
       <nav class="nav_left">

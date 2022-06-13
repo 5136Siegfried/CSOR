@@ -37,6 +37,10 @@ footer{
   }
   @media screen and (max-width: 1024px) {
     flex-direction: column;
+    .copyright{
+      text-align: center;
+      margin-top: 15px;
+    }
   }
 }
 </style>
