@@ -1,6 +1,8 @@
 <template>
   <header>
-    <div id="burger" @click="isActive = !isActive">Menu</div>
+    <div id="burger" @click="isActive = !isActive">
+      <img src="~/assets/img/CharmMenuHamburger.svg" alt="Menu">
+    </div>
     <div class="header__wrapper" :class="{active : isActive}">
       <nav class="nav_left">
         <ul>
@@ -180,7 +182,7 @@ header{
     width: 300px;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas:
   "logo"
   "nav_left"
@@ -191,15 +193,25 @@ header{
 }
 #burger{
   display: none;
+  width: 50px;
+  height: 50px;
   position: absolute;
   z-index: 1000;
-  top: 50px;
-  right: 50px;
-  background: red;
+  top: 10px;
+  right: 10px;
+  background: rgba(0,0,0, 0.2);
   padding: 1em;
+  border-radius: 50%;
   cursor: pointer;
+  user-select: none;
+  img{
+    user-select: none;
+  }
   @media screen and (max-width: 1024px) {
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items : center;
   }
 }
 .header__wrapper.active{
