@@ -89,6 +89,7 @@ section.right {
     height: 20%;
   }
   @media screen and (max-width: 500px ) {
+    width: 100%;
     padding: 0
   }
 }
@@ -114,6 +115,7 @@ section .content {
 .icons {
   margin: 20px 0 2rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   //gap: 50px;
@@ -142,6 +144,9 @@ section .content {
       height: 30px;
       padding: 3px;
     }
+  }
+  @media screen and (max-width: 360px) {
+
   }
 }
 </style>
