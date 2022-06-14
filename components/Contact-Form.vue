@@ -19,7 +19,7 @@ form{
   display: flex;
   gap: 50px;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding: 2rem;
   border: 4px solid white;
@@ -55,6 +55,9 @@ form{
       color: black;
       background: white;
     }
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
   }
 }
 </style>

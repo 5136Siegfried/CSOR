@@ -123,9 +123,13 @@ export default {
     &:hover {
       opacity: 1;
     }
-
     &:hover .hover {
       top: 0;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 80%;
+      height: 80vmin;
     }
   }
   @media screen and (max-width: 1024px) {

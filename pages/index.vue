@@ -56,6 +56,10 @@ export default {
   align-items: center;
   color: white;
   height: calc(100vh - 80px);
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 section {
@@ -68,6 +72,12 @@ section.left {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    height: 80%;
+    > .content {
+      display: none;
+    }
+  }
 }
 
 section.right {
@@ -75,6 +85,9 @@ section.right {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    height: 20%;
+  }
 }
 
 section .content {
@@ -105,7 +118,10 @@ section .content {
   cursor: pointer;
 
   li {
-    margin: 0 25px
+    margin: 0 25px;
+    @media screen and (max-width: 1024px) {
+      margin: 0 15px
+    }
   }
 }
 </style>

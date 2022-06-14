@@ -8,16 +8,19 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a{
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 0.1rem;
   font-weight: 700;
-  width: 50%;
+  width: 70%;
   margin: 3rem auto;
   padding: 1rem 2rem;
   border: 4px solid white;
   border-radius: 15px;
+@media screen and (max-width: 1024px) {
+  width: 70%;
+}
 }
 </style>

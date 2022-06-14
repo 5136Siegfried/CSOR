@@ -155,12 +155,13 @@ export default {
     transform: scale(1.3);
   }
 
-  @media screen and (max-width: 445px) {
+  @media screen and (max-width: 500px) {
     width: 80%;
+    height: 80vmin;
     margin: 3rem 0;
     .img_container{
       width: 100%;
-      height: 345px;
+      height: 100%;
     }
   }
 }

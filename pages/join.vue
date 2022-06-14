@@ -57,6 +57,7 @@ form {
   }
 
   input, textarea {
+    width: 100%;
     padding: 0.5rem 1rem;
     background: lighten($blue, 58);
     outline: none;
@@ -67,7 +68,6 @@ form {
       color: white;
     }
   }
-
   input[type="submit"] {
     color: white;
     background: $blue;
@@ -84,6 +84,11 @@ form {
       color: white;
       background: $red;
     }
+  }
+  @media screen and (max-width: 500px) {
+    padding: 0;
+    border: none;
+    width: 95%;
   }
 }
 </style>
