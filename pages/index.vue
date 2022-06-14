@@ -88,6 +88,9 @@ section.right {
   @media screen and (max-width: 1024px) {
     height: 20%;
   }
+  @media screen and (max-width: 500px ) {
+    padding: 0
+  }
 }
 
 section .content {
@@ -119,8 +122,25 @@ section .content {
 
   li {
     margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    padding: 1em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.4);
+    > img{
+      width: 100%;
+      height: 100%;
+    }
     @media screen and (max-width: 1024px) {
       margin: 0 15px
+    }
+    @media screen and (max-width: 580px) {
+      width: 30px;
+      height: 30px;
+      padding: 3px;
     }
   }
 }

@@ -24,6 +24,7 @@ form{
   padding: 2rem;
   border: 4px solid white;
   border-radius: 30px;
+  background: rgba(0,0,0,0.4);
   h3{
     text-align: center;
     font-size: 2rem;
@@ -45,7 +46,7 @@ form{
     font-weight: 700;
     background: transparent;
     padding: 0.5rem 2rem;
-    margin: auto;
+    margin: 0 auto 1rem auto;
     border: 4px solid white;
     border-radius: 20px;
     width: 50%;
@@ -57,7 +58,9 @@ form{
     }
   }
   @media screen and (max-width: 1024px) {
-    width: 100%;
+    width: 90%;
+    gap: 40px;
+    padding: 1rem
   }
 }
 </style>
