@@ -1,15 +1,15 @@
 <template>
   <div class="modal_wrapper">
     <div class="modal origines">
-      <img class="img-header" src="~/assets/img/sanitaire_original.jpg" alt="photo restau du coeur">
+      <img alt="photo restau du coeur" class="img-header" src="~/assets/img/sanitaire_original.jpg">
       <h2>Les partenariats</h2>
       <div class="content">
         <img
+          alt="images graines de solidarité"
           class="floatRight"
+          height="298"
           src="http://via.placeholder.com/332x298"
           width="332"
-          height="298"
-          alt="images graines de solidarité"
         >
         <p>
           Le CSOR s’allie aux autres associations bordelaises oeuvrant auprès des publics précaires comme les Robins de
@@ -23,93 +23,111 @@
           <h3>Notre réseau</h3>
           <div class="partenaires">
             <img
-              src="~/assets/img/partenaires/Mairie-bordeaux.jpg"
               alt="Mairie de Bordeaux"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Mairie-bordeaux.jpg"
               title="Mairie de Bordeaux"
             >
             <img
-              src="~/assets/img/partenaires/CHU.jpg"
               alt="CHU de Bordeaux"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/CHU.jpg"
               title="CHU de Bordeaux"
             >
             <img
-              src="~/assets/img/partenaires/CEID.jpg"
               alt="CEID"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/CEID.jpg"
               title="Comité d'étude et d'information sur la drogue et les addictions"
             >
             <img
-              src="~/assets/img/partenaires/la-case.jpg"
               alt="lacase"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/la-case.jpg"
               title="Centre d'accueil et d'accompagnement à la réduction des risques des usagers de drogues"
             >
             <img
-              src="~/assets/img/partenaires/CCAS.jpg"
               alt="CCAS de Bordeaux"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/CCAS.jpg"
               title="Centre communal d'action sociale"
             >
             <img
-              src="~/assets/img/partenaires/Diaconat-bordeaux.jpg"
               alt="Diaconat de Bordeaux"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Diaconat-bordeaux.jpg"
               title="Entraide protestante"
             >
             <img
-              src="~/assets/img/partenaires/croix-rouge.jpg"
               alt="Croix-Rouge"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/croix-rouge.jpg"
               title="Croix-Rouge"
             >
             <img
-              src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg"
               alt="Bordeaux Métropole Médiation"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg"
               title="Bordeaux Métropole Médiation"
             >
             <img
-              src="~/assets/img/partenaires/samu-social.jpg"
               alt="Samu Social"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/samu-social.jpg"
               title="Samu Social"
             >
             <img
-              src="~/assets/img/partenaires/CIAO.jpg"
               alt="Centre d'accueil, d'information et d'orientation"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/CIAO.jpg"
               title="Centre d'accueil, d'information et d'orientation"
             >
             <img
-              src="~/assets/img/partenaires/TBM.jpg"
               alt="Transport Bordeaux Métropole"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/TBM.jpg"
               title="Transport Bordeaux Métropole"
             >
             <img
-              src="~/assets/img/partenaires/Restos_du_coeur.jpg"
               alt="Les restaurant du coeur"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Restos_du_coeur.jpg"
               title="Les restaurant du coeur"
             >
             <img
-              src="~/assets/img/partenaires/Maraude-Coeur 1.jpg"
               alt="La Maraude du coeur"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Maraude-Coeur 1.jpg"
               title="La Maraude du coeur"
             >
             <img
-              src="~/assets/img/partenaires/Les-gratuits.jpg"
               alt="Les gratuits gironde solidarité"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Les-gratuits.jpg"
               title="Les gratuits gironde solidarité"
             >
             <img
-              src="~/assets/img/partenaires/GDS.jpg"
               alt="Graines De Solidarité"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/GDS.jpg"
               title="Graines De Solidarité"
             >
             <img
-              src="~/assets/img/partenaires/Robins-de-la-rue.jpg"
               alt="Les Robins de la Rue"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Robins-de-la-rue.jpg"
               title="Les Robins de la Rue"
             >
             <img
-              src="~/assets/img/partenaires/Pain-amitie.jpg"
               alt="Le Pain de L'Amitié"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Pain-amitie.jpg"
               title="Le Pain de L'Amitié"
             >
             <img
-              src="~/assets/img/partenaires/Croquette-macadam.jpg"
               alt="Croquette & Macadam"
+              class="logo_reseau"
+              src="~/assets/img/partenaires/Croquette-macadam.jpg"
               title="Croquette & Macadam"
             >
           </div>
@@ -139,12 +157,13 @@ export default {
 }
 
 .content {
-  h3{
+  h3 {
     color: $blue;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+
   p {
     margin: 1em 0
   }
@@ -164,12 +183,15 @@ export default {
       margin-right: 2em;
     }
   }
-  .reseau{
+
+  .reseau {
     clear: both;
-    .partenaires{
+
+    .partenaires {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
       gap: 1.5rem
     }
   }

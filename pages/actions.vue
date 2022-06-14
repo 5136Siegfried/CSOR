@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="bloc bloc2">
-          <h2>L'encadrement <span>sanitaire</span></h2>
+          <h2>Les partenaires <span>d'actions</span></h2>
           <div class="img_container">
             <img
               alt="photo restau du coeur"
