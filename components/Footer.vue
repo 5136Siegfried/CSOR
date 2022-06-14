@@ -33,6 +33,7 @@ footer{
     gap: 2rem;
   @media screen and (max-width: 1024px) {
     flex-direction: column;
+    gap: 1rem
   }
   }
   @media screen and (max-width: 1024px) {

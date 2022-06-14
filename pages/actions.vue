@@ -106,8 +106,10 @@ export default {
       display: inline;
       position: absolute;
     }
+    @media screen and (max-width: 330px) {
+      font-size: 1rem;
+    }
   }
-
   .img_container {
     position: relative;
     width: 425px;
@@ -150,11 +152,9 @@ export default {
       animation: appear 0.5s ease-in-out forwards;
     }
   }
-
   &:hover h2 {
     transform: scale(1.3);
   }
-
   @media screen and (max-width: 500px) {
     width: 80%;
     height: 80vmin;
@@ -177,11 +177,14 @@ export default {
       right: -50px;
       bottom: -30px;
       transform: rotate(-5deg);
-      @include framed_title($blue)
+      @include framed_title($blue);
+      @media screen and (max-width: 330px) {
+        right: -30px;
+        bottom: -20px
+      }
     }
   }
 }
-
 .bloc2 {
   h2 {
     top: -30px;
@@ -193,11 +196,13 @@ export default {
       bottom: -40px;
       left: 10%;
       transform: rotate(-5deg);
-      @include framed_title($red)
+      @include framed_title($red);
+      @media screen and (max-width: 330px) {
+        bottom: -20px;
+      }
     }
   }
 }
-
 .bloc3 {
   h2 {
     top: -30px;
@@ -209,7 +214,10 @@ export default {
       right: -50px;
       bottom: -40px;
       transform: rotate(5deg);
-      @include framed_title($blue)
+      @include framed_title($blue);
+      @media screen and (max-width: 330px) {
+        bottom: -25px;
+      }
     }
   }
 }
