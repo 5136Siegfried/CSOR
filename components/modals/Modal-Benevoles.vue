@@ -1,6 +1,9 @@
 <template>
   <div class="modal_wrapper">
     <div class="modal benevoles">
+      <div class="closeModal" @click="$emit('close-modal')">
+        <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
+      </div>
       <div class="prez">
         <div class="content">
           <h2>Nos Bénévoles</h2>
@@ -20,6 +23,7 @@
           name="Alexandra"
           age="30"
           description="Cheffe d'équipe en prévention sécurité, pas toujours facile à suivre (en maraude... comme en discussion !)"
+          :img-url="require('~/assets/img/membres/alexandra.jpg')"
           theme="1"
         />
 
@@ -27,6 +31,7 @@
           name="Laura"
           age="32"
           description="Infirmière, trésorière au CSOR, couturière et championne de backgammon"
+          :img-url="require('~/assets/img/membres/laura.jpg')"
           theme="2"
         />
 
@@ -34,13 +39,15 @@
           name="Jess"
           age="35"
           description="Aide-soignante et présidente du CSOR très sympa, même si elle comprend jamais rien à ce qu'on lui demande"
+          :img-url="require('~/assets/img/membres/jess.jpg')"
           theme="1"
         />
 
         <FicheMembre
-          name="Ginette"
-          age="54"
-          description="Assistante maternelle et maraudeuse engagée"
+          name="Stéphane"
+          age="39"
+          description="Négociateur foncier et philantrope en herbe"
+          :img-url="require('~/assets/img/membres/stephane.jpg')"
           theme="2"
         />
 
@@ -48,6 +55,7 @@
           name="Dominik"
           age="?"
           description="Maraudeuse, artiste au grand coeur et arpenteuse de mondes"
+          :img-url="require('~/assets/img/membres/dominik.jpg')"
           theme="1"
         />
 
@@ -55,6 +63,7 @@
           name="Vincent"
           age="28"
           description="Comédien et régisseur cinéma. Un gars simple exerçant des métiers compliqués"
+          :img-url="require('~/assets/img/membres/vincent.jpg')"
           theme="2"
         />
 
@@ -62,14 +71,23 @@
           name="Juliane"
           age="32"
           description="Graphiste, maraudeuse,et fervente défenseuse des abeilles et de la justice"
+          :img-url="require('~/assets/img/membres/juliane.jpg')"
           theme="1"
         />
 
         <FicheMembre
-          name="Ginette"
-          age="54"
-          description="Assistante maternelle et maraudeuse engagée"
+          name="Marc"
+          age="?"
+          description="Étudiant en médecine et grand fan de Tintin !"
+          :img-url="require('~/assets/img/membres/marc.jpg')"
           theme="2"
+        />
+        <FicheMembre
+          name="Robert"
+          age="?"
+          description="[Blablabla...]"
+          :img-url="require('~/assets/img/membres/robert.jpg')"
+          theme="1"
         />
       </div>
       <p><strong>Et peut-être vous bientôt ? ;)</strong></p>

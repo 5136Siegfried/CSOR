@@ -1,6 +1,6 @@
 <template>
   <div class="card" :class="`style${theme}`">
-    <img src="http://via.placeholder.com/155x155" :alt="`Photo de ${name}`">
+    <img :src="imgUrl" :alt="`Photo de ${name}`">
     <p class="info">
       {{ name }} - {{ age }} ans
     </p>
@@ -26,9 +26,18 @@ export default {
       type: Number,
       default: 0
     },
+    imgUrl: {
+      type: String,
+      default: ''
+    },
     theme: {
       type: String,
       default: '1'
+    }
+  },
+  methods: {
+    getUrl (name) {
+      return `/assets/img/membres/${name.toLowerCase()}.jpg`
     }
   }
 }

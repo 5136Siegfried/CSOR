@@ -1,10 +1,13 @@
 <template>
   <div class="modal_wrapper">
     <div class="modal origines">
+      <div class="closeModal" @click="$emit('close-modal')">
+        <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
+      </div>
       <img class="img-header" src="~/assets/img/cover-croix-bleues.jpg" alt="photo des croix bleues">
       <h2>D'ou on vient</h2>
       <div class="content">
-        <img src="http://via.placeholder.com/328x298" alt="images croix bleues">
+        <img src="~/assets/img/croix_bleue_manif.jpeg" width="528" height="328" alt="images croix bleues">
 
         <p>
           <strong>

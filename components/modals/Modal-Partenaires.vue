@@ -1,6 +1,9 @@
 <template>
   <div class="modal_wrapper">
     <div class="modal origines">
+      <div class="closeModal" @click="$emit('close-modal')">
+        <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
+      </div>
       <img alt="photo restau du coeur" class="img-header" src="~/assets/img/sanitaire_original.jpg">
       <h2>Les partenariats</h2>
       <div class="content">
@@ -8,13 +11,13 @@
           alt="images graines de solidarité"
           class="floatRight"
           height="298"
-          src="http://via.placeholder.com/332x298"
+          src="~/assets/img/ill_sanitaire.jpg"
           width="332"
         >
         <p>
           Le CSOR s’allie aux autres associations bordelaises oeuvrant auprès des publics précaires comme les Robins de
-          la Rue, le Gratuits, les Restos du coeur (en période hivernale), la maraude du coeur afin de rencontrer des
-          personnes en dehors des parcours de maraude et évaluer les besoins en santé présents.
+          la Rue, Graines de solidarité, le Gratuits, les Restos du coeur (en période hivernale), la maraude du coeur afin
+          de rencontrer des personnes en dehors des parcours de maraude et évaluer les besoins en santé présents.
         </p>
         <p class="important">
           Rajouter un paragraphe sur les liens que nous avons avec le milieu médico-social

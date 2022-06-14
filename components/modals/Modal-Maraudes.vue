@@ -1,12 +1,15 @@
 <template>
   <div class="modal_wrapper">
     <div class="modal origines">
+      <div class="closeModal" @click="$emit('close-modal')">
+        <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
+      </div>
       <img class="img-header" src="~/assets/img/maraudes_original.jpg" alt="photo des croix bleues">
       <h2>Les maraudes de soin</h2>
       <div class="content">
         <img
           class="floatRight"
-          src="http://via.placeholder.com/351x327"
+          src="~/assets/img/ill_maraudes.jpg"
           width="351"
           height="327"
           alt="images croix bleues"

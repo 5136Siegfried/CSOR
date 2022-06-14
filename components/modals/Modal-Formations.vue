@@ -1,11 +1,14 @@
 <template>
   <div class="modal_wrapper">
     <div class="modal origines">
+      <div class="closeModal" @click="$emit('close-modal')">
+        <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
+      </div>
       <img class="img-header" src="~/assets/img/formation_original.jpg" alt="photo prise pendant une formation">
       <h2>Les formations internes</h2>
       <div class="content">
         <img
-          src="http://via.placeholder.com/500x240"
+          src="~/assets/img/ill_formation.jpg"
           width="500"
           height="240"
           alt="images exemple formation"

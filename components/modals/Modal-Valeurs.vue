@@ -1,10 +1,13 @@
 <template>
   <div class="modal_wrapper">
     <div class="modal origines">
+      <div class="closeModal" @click="$emit('close-modal')">
+        <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
+      </div>
       <img class="img-header" src="~/assets/img/valeurs.jpg" alt="photo des croix bleues">
       <h2>Nos Valeurs !</h2>
       <div class="content">
-        <img class="floatRight" src="http://via.placeholder.com/328x298" alt="images croix bleues">
+        <img class="floatRight" src="~/assets/img/ill_valeurs1.jpg" alt="images croix bleues">
 
         <p>
           Il y a beaucoup de choses qui peuvent manquer aux gens de la rue, au premier regard. Nourriture, chauffage,
@@ -23,7 +26,7 @@
 
         <img
           class="floatLeft"
-          src="http://via.placeholder.com/298x470"
+          src="~/assets/img/ill_valeurs2.jpg"
           alt="images croix bleues"
         >
         <ul>
@@ -54,7 +57,7 @@
             propre expérience, et le développer à son rythme grâce à nos ateliers d’initiation et de formation.
           </li>
         </ul>
-        <img class="floatRight" src="http://via.placeholder.com/409x400" alt="images croix bleues">
+        <img class="floatRight" src="~/assets/img/ill_valeurs3.jpg" alt="images croix bleues">
 
         <p>
           Nous avons découvert au fil des rues un véritable besoin, au-delà même de la santé, un besoin humain et un
