@@ -90,11 +90,15 @@ export default {
 <style lang="scss" scoped>
 .prez {
   display: flex;
-  //gap: 30px;
 
   .content {
     flex: 1;
     margin-right: 2rem;
+    @media screen and (max-width: 750px) {
+      margin: 0;
+      line-height: 1.8em;
+      //font-size: 1.5rem;
+    }
   }
 
   .image {
@@ -105,6 +109,9 @@ export default {
       height: 100%;
       object-fit: cover;
     }
+  }
+  @media screen and (max-width: 750px) {
+    flex-direction: column-reverse;
   }
 }
 

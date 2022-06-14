@@ -197,7 +197,7 @@ header{
   width: 50px;
   height: 50px;
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   top: 10px;
   right: 10px;
   background: rgba(0,0,0, 0.2);
