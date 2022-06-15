@@ -41,6 +41,16 @@ export default {
 //h1 b{
 //  line-height: 0.5em;
 //}
+
+.page_action__title{
+  line-height: 1.5em!important;
+}
+.page_action__content{
+  margin-bottom: 30px;
+  @media screen and (max-width: 1024px) {
+    margin: 30px auto;
+  }
+}
 button{
   display: block;
   margin: auto;

@@ -44,8 +44,8 @@ form {
   gap: 20px;
   flex-direction: column;
   //width: 60%;
-  margin: 30px auto 0 auto;
-  padding: 2rem;
+  margin: 30px auto;
+  padding: 1.5rem;
   border: 4px solid $blue;
   border-radius: 30px;
 

@@ -53,6 +53,7 @@ export default {
   background: $blue!important;
 }
 .page_action__content{
+  margin-bottom: 30px;
   .schoko{
     color: $blue;
     font-weight: 700;

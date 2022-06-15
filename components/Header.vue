@@ -176,7 +176,7 @@ header{
   }
 
   @media screen and (max-width: 1024px){
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -196,7 +196,7 @@ header{
   display: none;
   width: 50px;
   height: 50px;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 10px;
   right: 10px;

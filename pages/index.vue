@@ -115,7 +115,6 @@ section .content {
 .icons {
   margin: 20px 0 2rem 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   //gap: 50px;
@@ -123,7 +122,7 @@ section .content {
   cursor: pointer;
 
   li {
-    margin: 0 25px;
+    margin: 0 15px;
     display: flex;
     justify-content: center;
     align-items : center;
@@ -137,16 +136,19 @@ section .content {
       height: 100%;
     }
     @media screen and (max-width: 1024px) {
-      margin: 0 15px
+      margin: 0 15px;
     }
     @media screen and (max-width: 580px) {
       width: 30px;
       height: 30px;
       padding: 3px;
     }
+    @media screen and (max-width: 360px) {
+      margin: 20px
+    }
   }
   @media screen and (max-width: 360px) {
-
+    flex-wrap: wrap;
   }
 }
 </style>

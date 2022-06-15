@@ -4,13 +4,41 @@
     <input id="name" type="text" name="name" placeholder="Nom et Prénom" autocomplete="off">
     <input id="email" type="email" name="email" placeholder="Email" autocomplete="off">
     <textarea id="message" name="message" cols="30" rows="10" placeholder="Votre Message" />
-    <input type="submit" value="Envoyer">
+    <input type="submit" value="Envoyer" @click="sendmail">
   </form>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-  name: 'ContactForm'
+  name: 'ContactForm',
+  methods: {
+    sendmail () {
+      // const data = {
+      //   service_id: 'service_jo8s9p4',
+      //   template_id: 'service_jo8s9p4',
+      //   user_id: 'WxvWqXjlCWF7c_ake',
+      //   template_params: {
+      //     username: 'John',
+      //     mail: 'test@test.com',
+      //     message: 'Salut !',
+      //     'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+      //   }
+      // }
+      const form = document.querySelector('form')
+      const data = new FormData(form)
+      try {
+        axios({
+          method: 'post',
+          url: 'https://csor.fr/testmail.php',
+          data
+        }).then(res => console.log(res))
+      } catch (e) {
+        console.log(e)
+      }
+    }
+  }
 }
 </script>
 
