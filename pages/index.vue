@@ -70,15 +70,6 @@ export default {
     height: 100%;
   }
 }
-.slider{
-  width: 100%;
-  height: 100%;
-  img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
 .content{
   width: 50%;
   height: 100%;
