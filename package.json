@@ -1,5 +1,5 @@
 {
-  "name": "CSOR",
+  "name": "csor",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -20,7 +20,9 @@
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0"
+    "webpack": "^4.46.0",
+    "glob-parent": ">=5.1.2",
+    "nth-check": ">=2.0.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
