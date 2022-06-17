@@ -10,6 +10,7 @@ export default {
 
 <style lang="scss" scoped>
 a{
+  color: white!important;
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 0.1rem;

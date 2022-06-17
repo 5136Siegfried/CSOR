@@ -1,9 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  devServer: {
-    host: 'csor.lo'
-  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -51,10 +48,6 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/device'
   ],
-  device: {
-    defaultUserAgent: 'Mozilla/5.0 (Linux; Android 11; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/89.0.4389.105 Mobile Safari/537.36',
-    refreshOnResize: true
-  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios

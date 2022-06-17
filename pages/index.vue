@@ -1,6 +1,15 @@
 <template>
   <div class="site">
-    <div class="slider" />
+    <VueSlickCarousel class="slider" v-bind="slickOptions">
+      <img src="~/assets/img/slider_home/1-min.jpg" alt="Photo du CSOR">
+      <img src="~/assets/img/slider_home/2-min.jpg" alt="Photo du CSOR">
+      <img src="~/assets/img/slider_home/3-min.jpg" alt="Photo du CSOR">
+      <img src="~/assets/img/slider_home/4-min.jpg" alt="Photo du CSOR">
+      <img src="~/assets/img/slider_home/5-min.jpg" alt="Photo du CSOR">
+      <img src="~/assets/img/slider_home/6-min.jpg" alt="Photo du CSOR">
+      <img src="~/assets/img/slider_home/7-min.jpg" alt="Photo du CSOR">
+      <img src="~/assets/img/slider_home/8-min.jpg" alt="Photo du CSOR">
+    </VueSlickCarousel>
     <div class="site__wrapper">
       <div class="content">
         <contact-form v-if="display === 'mail'" class="form" />
@@ -23,69 +32,25 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import '~/assets/slick-carousel-1.9.0.min.css'
 import phone from '~/components/Phone'
 
 export default {
   name: 'Index',
   components: {
-    phone
+    phone,
+    VueSlickCarousel
   },
   data () {
     return {
       display: null,
-      intID: null,
-      i: 0,
-      images: [],
-      bg: 1,
-      slideTime: 5000
-    }
-  },
-  mounted () {
-    this.images[0] = this.getUrl('1-min')
-    this.images[1] = this.getUrl('2-min')
-    this.images[2] = this.getUrl('3-min')
-    this.images[3] = this.getUrl('4-min')
-    this.images[4] = this.getUrl('5-min')
-    this.images[5] = this.getUrl('6-min')
-    this.images[6] = this.getUrl('7-min')
-    this.images[7] = this.getUrl('8-min')
-    this.changeBackground()
-  },
-  // mounted () {
-  //   const p = document.querySelector('.site')
-  //   setInterval(() => {
-  //     this.bg++
-  //     console.log('bg : ' + this.bg)
-  //     if (this.bg > 8) {
-  //       this.bg = 1
-  //     }
-  //   }, 5000)
-  //   this.intID = setInterval(() => {
-  //     console.log('changement')
-  //     p.style.background = `center/cover url('${this.getUrl(this.bg)}') no-repeat`
-  //   }, 5000)
-  // },
-  // unmounted () {
-  //   clearInterval(this.intID)
-  // },
-  methods: {
-    getUrl (name) {
-      return require(`~/assets/img/slider_home/${name}.jpg`)
-    },
-    changeBackground () {
-      const p = document.querySelector('.slider')
-      p.style.opacity = 0.2
-      setTimeout(() => {
-        // console.log('change')
-        p.style.opacity = 1
-        p.style.background = `#333 center/cover url('${this.images[this.i]}') no-repeat`
-      }, 600)
-      if (this.i < this.images.length - 1) {
-        this.i++
-      } else {
-        this.i = 0
+      slickOptions: {
+        autoplay: true,
+        arrows: false,
+        fade: true,
+        autoplaySpeed: 10000
       }
-      setTimeout(this.changeBackground, this.slideTime)
     }
   }
 }
@@ -107,7 +72,12 @@ export default {
 }
 .slider{
   width: 100%;
-  height: 100%
+  height: 100%;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .content{
   width: 50%;
@@ -135,7 +105,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items : center;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 50%;
     width: 50px;
     height: 50px;
