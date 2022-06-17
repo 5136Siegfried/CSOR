@@ -55,10 +55,10 @@ h1 {
 
 .site{
   position: relative;
-  min-height: 500px;
-
-  //margin-bottom: 30px;
-  //min-height: 100%;
+  //min-height: 500px;
+  @media screen and(max-width: 1024px){
+    min-height: calc(100vh - 183px); // 183px = footer mobile
+  }
   &__wrapper{
   max-width: 1920px;
   margin: auto;
@@ -88,32 +88,32 @@ h1 {
     display: none;
     @media screen and (max-width: 1024px) {
       display: block;
-    text-transform: uppercase;
-    position: absolute;
-    z-index: 20;
-    top: 25px;
-    left: 50px;
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-
-    > span{
-      display: inline-block;
-      position: relative;
-      z-index: 15;
+      text-transform: uppercase;
+      position: absolute;
+      z-index: 20;
+      top: 25px;
+      left: 50px;
+      font-size: 3rem;
       font-weight: 700;
-      &:before{
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 10%;
-        right: 5px;
-        width: 95%;
-        height: 80%;
-        background: $red;
-        transform: skew(-5deg) rotate(-5deg);
+      color: white;
+
+      > span{
+        display: inline-block;
+        position: relative;
+        z-index: 15;
+        font-weight: 700;
+        &:before{
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 10%;
+          right: 5px;
+          width: 95%;
+          height: 80%;
+          background: $red;
+          transform: skew(-5deg) rotate(-5deg);
+        }
       }
-    }
     }
   }
   img{

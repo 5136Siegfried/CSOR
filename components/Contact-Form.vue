@@ -4,7 +4,7 @@
     <input id="name" type="text" name="name" placeholder="Nom et Prénom" autocomplete="off">
     <input id="email" type="email" name="email" placeholder="Email" autocomplete="off">
     <textarea id="message" name="message" cols="30" rows="10" placeholder="Votre Message" />
-    <input type="submit" value="Envoyer" >
+    <input type="submit" value="Envoyer">
   </form>
 </template>
 
@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 form{
   display: flex;
-  gap: 50px;
+  gap: 25px;
   flex-direction: column;
   width: 70%;
   margin: auto;
@@ -26,6 +26,7 @@ form{
   border-radius: 30px;
   background: rgba(0,0,0,0.4);
   h3{
+    color: white;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;

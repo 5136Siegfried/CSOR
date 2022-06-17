@@ -2,8 +2,12 @@
   <div class="site">
     <div class="site__wrapper">
       <div class="page_action">
-        <div class="title">Nous <span>aider</span></div>
-        <h1 class="page_action__title">Être <b>Mécène</b></h1>
+        <div class="title">
+          Nous <span>aider</span>
+        </div>
+        <h1 class="page_action__title">
+          Être <b>Mécène</b>
+        </h1>
         <img class="page_action__image" src="~/assets/img/help.jpg" alt="Photo d'un cochon tirelire'">
         <div class="page_action__content">
           <p>

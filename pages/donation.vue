@@ -2,8 +2,12 @@
   <div class="site">
     <div class="site__wrapper">
       <div class="page_action">
-        <div class="title">Nous <span>équiper</span></div>
-        <h1 class="page_action__title">Du matériel <br><b>en trop ?</b></h1>
+        <div class="title">
+          Nous <span>équiper</span>
+        </div>
+        <h1 class="page_action__title">
+          Du matériel <br><b>en trop ?</b>
+        </h1>
         <img class="page_action__image" src="~/assets/img/donation.jpg" alt="Photo d'équipement médicale'">
         <div class="page_action__content">
           <p>
