@@ -48,8 +48,9 @@ export default {
       slickOptions: {
         autoplay: true,
         arrows: false,
-        fade: true,
-        autoplaySpeed: 10000
+        fade: false,
+        lazyLoad: 'progressive',
+        autoplaySpeed: 5000
       }
     }
   }
