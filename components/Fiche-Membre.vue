@@ -34,11 +34,6 @@ export default {
       type: String,
       default: '1'
     }
-  },
-  methods: {
-    getUrl (name) {
-      return `/assets/img/membres/${name.toLowerCase()}.jpg`
-    }
   }
 }
 </script>
