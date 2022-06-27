@@ -27,6 +27,42 @@
           la PASS (Permanence d’Accès aux Soins de Santé), le CEID, la CASE, le CCAS,...
         </p>
       </div>
+
+      <div class="utils">
+        <h3>Où nous <b>trouver ?</b></h3>
+        <p>
+          Pendant nos maraudes sanitaires,<br>
+          les lundi, mercredi & vendredi, de 19h à 22h
+        </p>
+        <div class="circuits">
+          <Circuit
+            place="Gare"
+            color="red"
+            partner="Graines<br> de Solidarité"
+            :img-url="require('~/assets/img/partenaires/GDS.jpg')"
+          />
+          <Circuit
+            place="S<sup>te</sup> Cath"
+            color="blue"
+            partner="Les Robins<br> de la Rue"
+            :img-url="require('~/assets/img/partenaires/RDLR.jpg')"
+          />
+          <div class="circuit">
+            <p>
+              Nous intervenons également ponctuellement sur d’autres secteurs
+              en collaboration avec <b>Les Gratuits</b> et la <b>Maraude du Coeur</b>.
+            </p>
+              <img src="~/assets/img/partenaires/les-gratuits.png" alt="logo les gratuits">
+              <img src="~/assets/img/partenaires/maraude-Coeur 1.png" alt="logo les maraudes du coeur">
+          </div>
+        </div>
+      </div>
+
+      <p class="last">
+        L’ensemble de nos maraudes est en constante ré-évaluation
+        en fonction de la disponibilité de nos équipes et des besoins sur le terrain.
+      </p>
+
       <button @click="$emit('close-modal')">
         Fermer
       </button>
@@ -35,8 +71,12 @@
 </template>
 
 <script>
+import Circuit from '../Circuit'
 export default {
-  name: 'Maraudes'
+  name: 'Maraudes',
+  components: {
+    Circuit
+  }
 }
 </script>
 
@@ -72,4 +112,57 @@ export default {
   }
 }
 
+.utils{
+  > h3{
+    float: left;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2em;
+    > b {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+  }
+  > p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $blue;
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 50%;
+  }
+}
+.circuits{
+  margin-top: 40px;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  > .circuit{
+    flex: 1;
+    max-width: 300px;
+    min-width: 275px;
+    @media screen and (max-width: 315px) {
+      min-width: 100%;
+    }
+  }
+}
+.circuit:last-child{
+  grid-area: last;
+  padding: 5px;
+  color: $blue;
+  background-color: $lightgrey;
+  p > b{font-weight: bold}
+}
+
+p.last{
+  font-weight: 700;
+  color: $blue;
+  text-align: center;
+  margin: 1em 0
+}
 </style>
