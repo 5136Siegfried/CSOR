@@ -16,7 +16,8 @@
         >
         <p>Tout au long de l’année, nous réalisons des maraudes sanitaires plusieurs fois par semaine en soirée.</p>
         <p>
-          Au cours de ces maraudes, nous réalisons des soins de premiers secours ( ou 1 er necessité) auprès des
+          Au cours de ces maraudes, nous réalisons des soins de premiers secours ( ou 1<sup>ère</sup> necessité) auprès
+          des
           personnes en situation de précarité. Nous réalisons des pansements plus ou moins complexes selon le niveau
           de compétences des équipiers et l’expertise des professionnels sur le terrain sur des plaies diverses
           (brûlures, morsures, coupures,...).
@@ -52,8 +53,10 @@
               Nous intervenons également ponctuellement sur d’autres secteurs
               en collaboration avec <b>Les Gratuits</b> et la <b>Maraude du Coeur</b>.
             </p>
+            <div class="wrapper">
               <img src="~/assets/img/partenaires/les-gratuits.png" alt="logo les gratuits">
               <img src="~/assets/img/partenaires/maraude-Coeur 1.png" alt="logo les maraudes du coeur">
+            </div>
           </div>
         </div>
       </div>
@@ -152,8 +155,11 @@ export default {
   }
 }
 .circuit:last-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-area: last;
-  padding: 5px;
+  padding: 10px;
   color: $blue;
   background-color: $lightgrey;
   p > b{font-weight: bold}

@@ -8,10 +8,9 @@
         <div class="content">
           <h2>Nos Bénévoles</h2>
           <p>
-            Après ses débuts tumultueux et riches en émotions, le CSOR est au fil du temps devenu le groupe tel qu’il
-            est aujourd’hui, un groupe de maraudeurs issus de tous milieux, du médical à la puériculture en passant par le
-            bâtiment et l’artisanat, il n’y en a pas deux semblables et nous apportons tous notre pierre personnelle à
-            l’édifice !
+            Après ses débuts tumultueux et riches en émotions, le CSOR est, au fil du temps, devenu le groupe tel qu’il est aujourd’hui.
+            Nous sommes un groupe de maraudeurs issus de tous milieux, du médical à la puériculture en passant par le bâtiment et l’artisanat.
+            Il n’y en a pas deux semblables et nous apportons tous notre pierre personnelle à l’édifice !
           </p>
         </div>
         <div class="image">
@@ -38,7 +37,7 @@
         <FicheMembre
           name="Jess"
           age="35"
-          description="Aide-soignante et présidente du CSOR très sympa, même si elle comprend jamais rien à ce qu'on lui demande"
+          description="Aide-soignante et la plus cool de toutes les présidentes du CSOR"
           :img-url="require('~/assets/img/membres/jess.jpg')"
           theme="1"
         />
@@ -53,8 +52,8 @@
 
         <FicheMembre
           name="Dominik"
-          age="?"
-          description="Maraudeuse, artiste au grand coeur et arpenteuse de mondes"
+          age="60"
+          description="Maraudeuse, artiste au grand sac, sherpa d'exception et arpenteuse de mondes"
           :img-url="require('~/assets/img/membres/dominik.jpg')"
           theme="1"
         />
@@ -77,17 +76,10 @@
 
         <FicheMembre
           name="Marc"
-          age="?"
+          age="22"
           description="Étudiant en médecine et grand fan de Tintin !"
           :img-url="require('~/assets/img/membres/marc.jpg')"
           theme="2"
-        />
-        <FicheMembre
-          name="Robert"
-          age="?"
-          description="[Blablabla...]"
-          :img-url="require('~/assets/img/membres/robert.jpg')"
-          theme="1"
         />
       </div>
       <p><strong>Et peut-être vous bientôt ? ;)</strong></p>

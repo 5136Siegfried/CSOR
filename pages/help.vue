@@ -11,12 +11,8 @@
         <img class="page_action__image" src="~/assets/img/help.jpg" alt="Photo d'un cochon tirelire'">
         <div class="page_action__content">
           <p>
-            Parce que nous avons besoin de moyens pour financer notre matériel médical et nos consommables pour les
-            soins, toute aide financière est la bienvenue. De plus, nous avons pour objectif d’acquérir les
-            équipements
-            nécessaires à la sécurité de nos bénévoles lors des maraudes, et ainsi que du matériel pédagogique pour
-            nos
-            formations internes.
+            Parce que nous avons besoin de moyens pour financer notre matériel médical et nos consommables pour les soins, toute aide financière est la bienvenue.
+            De plus, nous avons pour objectif d’acquérir les équipements nécessaires à la sécurité de nos bénévoles lors des maraudes, ainsi que du matériel pédagogique pour nos formations internes.
           </p>
           <div class="page_wrapper__content__text__donation">
             <h4>Je fais un don :</h4>
