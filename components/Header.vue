@@ -10,7 +10,7 @@
           <li><a href="/about">Qui somme-nous ?</a></li>
           <li><a href="/actions">Nos actions</a></li>
           <li><a href="/news">Les actus</a></li>
-          <li><a href="/shop">La boutique</a></li>
+          <li><a href="/orientation">Orientations</a></li>
         </ul>
       </nav>
       <a href="/"><img class="logo" src="~/assets/img/logo.jpg" alt="logo du csor"></a>
