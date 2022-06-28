@@ -25,114 +25,150 @@
         <div class="reseau">
           <h3>Notre réseau</h3>
           <div class="partenaires">
-            <img
-              alt="Mairie de Bordeaux"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Mairie-bordeaux.jpg"
-              title="Mairie de Bordeaux"
-            >
-            <img
-              alt="CHU de Bordeaux"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/CHU.jpg"
-              title="CHU de Bordeaux"
-            >
-            <img
-              alt="CEID"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/CEID.jpg"
-              title="Comité d'étude et d'information sur la drogue et les addictions"
-            >
-            <img
-              alt="lacase"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/la-case.jpg"
-              title="Centre d'accueil et d'accompagnement à la réduction des risques des usagers de drogues"
-            >
-            <img
-              alt="CCAS de Bordeaux"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/CCAS.jpg"
-              title="Centre communal d'action sociale"
-            >
-            <img
-              alt="Diaconat de Bordeaux"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Diaconat-bordeaux.jpg"
-              title="Entraide protestante"
-            >
-            <img
-              alt="Croix-Rouge"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/croix-rouge.jpg"
-              title="Croix-Rouge"
-            >
-            <img
-              alt="Bordeaux Métropole Médiation"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg"
-              title="Bordeaux Métropole Médiation"
-            >
-            <img
-              alt="Samu Social"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/samu-social.jpg"
-              title="Samu Social"
-            >
-            <img
-              alt="Centre d'accueil, d'information et d'orientation"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/CIAO.jpg"
-              title="Centre d'accueil, d'information et d'orientation"
-            >
-            <img
-              alt="Transport Bordeaux Métropole"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/TBM.jpg"
-              title="Transport Bordeaux Métropole"
-            >
-            <img
-              alt="Les restaurant du coeur"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Restos_du_coeur.jpg"
-              title="Les restaurant du coeur"
-            >
-            <img
-              alt="La Maraude du coeur"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Maraude-Coeur 1.jpg"
-              title="La Maraude du coeur"
-            >
-            <img
-              alt="Les gratuits gironde solidarité"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Les-gratuits.jpg"
-              title="Les gratuits gironde solidarité"
-            >
-            <img
-              alt="Graines De Solidarité"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/GDS.jpg"
-              title="Graines De Solidarité"
-            >
-            <img
-              alt="Les Robins de la Rue"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Robins-de-la-rue.jpg"
-              title="Les Robins de la Rue"
-            >
-            <img
-              alt="Le Pain de L'Amitié"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Pain-amitie.jpg"
-              title="Le Pain de L'Amitié"
-            >
-            <img
-              alt="Croquette & Macadam"
-              class="logo_reseau"
-              src="~/assets/img/partenaires/Croquette-macadam.jpg"
-              title="Croquette & Macadam"
-            >
+            <a href="https://www.bordeaux.fr/" target="_blank">
+              <img
+                alt="Mairie de Bordeaux"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Mairie-bordeaux.jpg"
+                title="Mairie de Bordeaux"
+              >
+            </a>
+            <a href="https://www.chu-bordeaux.fr/" target="_blank">
+              <img
+                alt="CHU de Bordeaux"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/CHU.jpg"
+                title="CHU de Bordeaux"
+              >
+            </a>
+            <a href="https://ceid-addiction.com/" target="_blank">
+              <img
+                alt="CEID"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/CEID.jpg"
+                title="Comité d'étude et d'information sur la drogue et les addictions"
+              >
+            </a>
+            <a href="https://www.lacase.eu/" target="_blank">
+              <img
+                alt="lacase"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/la-case.jpg"
+                title="Centre d'accueil et d'accompagnement à la réduction des risques des usagers de drogues"
+              >
+            </a>
+            <a href="https://www.bordeaux.fr/o985/ccas" target="_blank">
+              <img
+                alt="CCAS de Bordeaux"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/CCAS.jpg"
+                title="Centre communal d'action sociale"
+              >
+            </a>
+            <a href="https://diaconatbordeaux.fr/" target="_blank">
+              <img
+                alt="Diaconat de Bordeaux"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Diaconat-bordeaux.jpg"
+                title="Entraide protestante"
+              >
+            </a>
+            <a href="https://www.croix-rouge.fr/Annuaire/UNITE-LOCALE-DE-BORDEAUX10">
+              <img
+                alt="Croix-Rouge"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/croix-rouge.jpg"
+                title="Croix-Rouge"
+              >
+            </a>
+            <a href="https://www.bordeaux.fr/o88605/bordeaux-metropole-mediation" target="_blank">
+              <img
+                alt="Bordeaux Métropole Médiation"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg"
+                title="Bordeaux Métropole Médiation"
+              >
+            </a>
+            <a href="http://alprado.fr/pole-medico-social/samu-social" target="_blank">
+              <img
+                alt="Samu Social"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/samu-social.jpg"
+                title="Samu Social"
+              >
+            </a>
+            <a href="https://www.caio-bordeaux.com/" target="_blank">
+              <img
+                alt="Centre d'accueil, d'information et d'orientation"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/CIAO.jpg"
+                title="Centre d'accueil, d'information et d'orientation"
+              >
+            </a>
+            <a href="https://www.infotbm.com/fr" target="_blank">
+              <img
+                alt="Transport Bordeaux Métropole"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/TBM.jpg"
+                title="Transport Bordeaux Métropole"
+              >
+            </a>
+            <a href="https://ad33.restosducoeur.org/" target="_blank">
+              <img
+                alt="Les restaurant du coeur"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Restos_du_coeur.jpg"
+                title="Les restaurant du coeur"
+              >
+            </a>
+            <a href="https://www.lamaraudeducoeurbordeaux.com/" target="_blank">
+              <img
+                alt="La Maraude du coeur"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Maraude-Coeur 1.jpg"
+                title="La Maraude du coeur"
+              >
+            </a>
+            <a href="https://www.lesgratuits.org/" target="_blank">
+              <img
+                alt="Les gratuits gironde solidarité"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Les-gratuits.jpg"
+                title="Les gratuits gironde solidarité"
+              >
+            </a>
+            <a href="https://www.bordeaux.fr/o87436/graines-de-solidarite" target="_blank">
+              <img
+                alt="Graines De Solidarité"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/GDS.jpg"
+                title="Graines De Solidarité"
+              >
+            </a>
+            <a href="https://lesrobinsdelarue.org/" target="_blank">
+              <img
+                alt="Les Robins de la Rue"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Robins-de-la-rue.jpg"
+                title="Les Robins de la Rue"
+              >
+            </a>
+            <a href="https://lepaindelamitie.fr/" target="_blank">
+              <img
+                alt="Le Pain de L'Amitié"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Pain-amitie.jpg"
+                title="Le Pain de L'Amitié"
+              >
+            </a>
+            <a href="https://croquette-macadam.com/" target="_blank">
+              <img
+                alt="Croquette & Macadam"
+                class="logo_reseau"
+                src="~/assets/img/partenaires/Croquette-macadam.jpg"
+                title="Croquette & Macadam"
+              >
+            </a>
           </div>
         </div>
       </div>

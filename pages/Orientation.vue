@@ -25,14 +25,29 @@
           <section class="sante">
             <h2>Santé</h2>
             <div class="content">
-              <div class="chu">
+              <div class="chuStAndre">
                 <img src="~/assets/img/partenaires/CHU.jpg" alt="logo CHU Bordeaux">
                 <div class="info">
                   <p>
                     <b>PASS St ANDRÉ</b> (Permanence d'accès aux soins de santé)<br>
                     <b>Pour un accès aux soins sans papier ni argent</b><br>
+                    du lundi au vendredi<br>
                     05 56 79 58 76 - Matin : avec RDV /Après-midi : sans RDV<br>
                     Tram A : Arrêt "Palais de Justice" / Bus 5 : Arrêt "Bourse du travail"<br>
+                    <span class="services">Services:  médecine généraliste, psychologie, accompagnement social, infirmerie, dentaire</span>
+                  </p>
+                </div>
+              </div>
+              <div class="chuPell">
+                <img src="~/assets/img/partenaires/CHU.jpg" alt="logo CHU Bordeaux">
+                <div class="info">
+                  <p>
+                    <b>PASS Pellegrin</b> (Permanence d'accès aux soins de santé)<br>
+                    <b>Pour un accès aux soins sans papier ni argent</b><br>
+                    du lundi au vendredi<br>
+                    05 57 82 15 20 - Matin : avec RDV /Après-midi : sans RDV<br>
+                    Tram A : Arrêt "Pellegrin"<br>
+                    <span class="services">Services:  médecine généraliste, psychologie, conseil administratif, infirmerie, dentaire</span>
                   </p>
                 </div>
               </div>
@@ -119,13 +134,17 @@
               </div>
               <div class="other">
                 <p><b>MAIS AUSSI :</b></p>
-                <img src="~/assets/img/partenaires/Diaconat-bordeaux.jpg" alt="logo Diaconat">
-                <img src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg" alt="logo Bordeaux Métropole Médiation">
+                <a href="https://diaconatbordeaux.fr/" target="_blank">
+                  <img src="~/assets/img/partenaires/Diaconat-bordeaux.jpg" alt="logo Diaconat">
+                </a>
+                <a href="https://www.bordeaux.fr/o88605/bordeaux-metropole-mediation" target="_blank">
+                  <img src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg" alt="logo Bordeaux Métropole Médiation">
+                </a>
               </div>
             </div>
           </section>
-          <section class="alimentaire">
-            <h2>alimentaire, vestimentaire et hygiène</h2>
+          <section class="maraudes">
+            <h2>Maraudes</h2>
             <div class="content">
               <div class="left">
                 <div class="gds">
@@ -194,9 +213,15 @@
                 <div class="other">
                   <p><b>MAIS AUSSI :</b></p>
                   <div class="images">
-                    <img src="~/assets/img/partenaires/Pain-amitie.jpg" alt="logo la pain de l'amitié">
-                    <img src="~/assets/img/partenaires/croix-rouge.jpg" alt="logo Croix Rouge">
-                    <img src="~/assets/img/partenaires/Restos_du_coeur.jpg" alt="logo Restaurant du Coeur">
+                    <a href="https://lepaindelamitie.fr/" target="_blank">
+                      <img src="~/assets/img/partenaires/Pain-amitie.jpg" alt="logo la pain de l'amitié">
+                    </a>
+                    <a href="https://www.croix-rouge.fr/Annuaire/UNITE-LOCALE-DE-BORDEAUX10" target="_blank">
+                      <img src="~/assets/img/partenaires/croix-rouge.jpg" alt="logo Croix Rouge">
+                    </a>
+                    <a href="https://ad33.restosducoeur.org" target="_blank">
+                      <img src="~/assets/img/partenaires/Restos_du_coeur.jpg" alt="logo Restaurant du Coeur">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -238,6 +263,9 @@ section > .content{
   @media screen and (max-width: 500px) {
     margin: 10px 0
   }
+}
+.services{
+  font-size: 0.8rem;
 }
 section.urgences{
   h2{background-color: $red}
@@ -291,7 +319,8 @@ section.sante{
         }
       }
     }
-    .chu{grid-area: chu; justify-self: center}
+    .chuStAndre{grid-area: andre; justify-self: center}
+    .chuPell{grid-area: pell; justify-self: center}
     .mma{grid-area: mma}
     .ceid{grid-area: ceid}
     .secop{grid-area: secop}
@@ -299,7 +328,7 @@ section.sante{
     display: grid;
     justify-content: space-evenly;
     grid-template-areas:
-    "chu chu"
+    "andre pell"
     "mma ceid"
     "secop case";
 
@@ -315,7 +344,6 @@ section.sante{
 section.social{
   h2{
     background-color: $blue;
-    .content{}
   }
   .content{
     display: flex;
@@ -332,7 +360,7 @@ section.social{
       img{margin: 0 10px}
     }
     >div.other{
-      > img{
+      > a{
         margin: 15px
       }
     }
@@ -348,10 +376,13 @@ section.social{
       > div img{
        display: none;
       }
+      .other img{
+        display: inline-block;
+      }
     }
   }
 }
-section.alimentaire {
+section.maraudes {
   h2 {
     background-color: $blue;
   }
@@ -388,8 +419,11 @@ section.alimentaire {
       align-items: center;
     }
     @media screen and (max-width: 440px) {
-      img:not(.other img){
+      img{
         display: none;
+      }
+      .other img{
+        display: block;
       }
     }
   }
