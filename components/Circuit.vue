@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 .circuit{
   color: white;
-  padding: 5px;
+  padding: 10px;
 }
 .circuit.red{
   grid-area: red;
@@ -43,6 +43,9 @@ export default {
   background-color: $blue;
 }
 
+h4{
+  height: 40px;
+}
 h4, h4 span{
   text-align: left;
   font-weight: 700;
@@ -52,7 +55,14 @@ ul{
   text-align: left;
   padding-left: 30px;
   list-style: disc;
-  margin: 5px
+  margin: 5px;
+
+  @media screen and (max-width: 1280px) {
+    font-size: 1.3rem;
+    > li {
+      margin: 0.5em 0;
+    }
+  }
 }
 .partner{
   position: relative;
