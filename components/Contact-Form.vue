@@ -3,7 +3,7 @@
     <h3>Contactez-nous</h3>
     <input id="name" type="text" name="name" placeholder="Nom et Prénom" autocomplete="off">
     <input id="email" type="email" name="email" placeholder="Email" autocomplete="off">
-    <textarea id="message" name="message" cols="30" rows="10" placeholder="Votre Message" />
+    <textarea id="message" name="message" cols="30" rows="7" placeholder="Votre Message" />
     <input type="submit" value="Envoyer">
   </form>
 </template>
@@ -61,7 +61,11 @@ form{
   @media screen and (max-width: 1024px) {
     width: 90%;
     gap: 40px;
+    margin: 5rem auto;
     padding: 1rem
+  }
+  @media screen and (max-width: 360px) {
+    margin: 1rem auto
   }
 }
 </style>

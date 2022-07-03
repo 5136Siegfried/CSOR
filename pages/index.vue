@@ -11,22 +11,22 @@
       <img src="~/assets/img/slider_home/8-min.jpg" alt="Photo du CSOR">
     </VueSlickCarousel>
     <div class="site__wrapper">
+      <img class="logo" src="~/assets/img/logo.jpg" alt="Logo du CSOR">
       <div class="content">
-        <contact-form v-if="display === 'mail'" class="form" />
-        <phone v-if="display === 'phone'" class="form" />
+        <DefaultHome v-if="display === 'default'" class="default" />
+        <Contact-form v-if="display === 'mail'" class="form" />
+        <Phone v-if="display === 'phone'" class="form" />
         <ul class="icons">
-          <li @click="display = 'mail'">
+          <li @click="displayBlock('mail')">
             <img src="~/assets/img/icons/mail.svg" alt="Email">
           </li>
-          <li @click="display = 'phone'">
+          <li @click="displayBlock('phone')">
             <img src="~/assets/img/icons/phone.svg" alt="Téléphone">
           </li>
           <li><img src="~/assets/img/icons/fb.svg" alt="Facebook"></li>
-          <li><img src="~/assets/img/icons/instagram.svg" alt="Instagram"></li>
-          <li><img src="~/assets/img/icons/youtube.svg" alt="Youtube"></li>
-          <li><img src="~/assets/img/icons/google.svg" alt="Google"></li>
         </ul>
       </div>
+      <img class="award" src="~/assets/img/prix_jeunes_asso.png" alt="logo prix des jeunes asso">
     </div>
   </div>
 </template>
@@ -34,17 +34,19 @@
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import '~/assets/slick-carousel-1.9.0.min.css'
-import phone from '~/components/Phone'
+import Phone from '~/components/Phone'
+import DefaultHome from '~/components/modals/DefaultHome'
 
 export default {
   name: 'Index',
   components: {
-    phone,
+    DefaultHome,
+    Phone,
     VueSlickCarousel
   },
   data () {
     return {
-      display: null,
+      display: 'default',
       slickOptions: {
         autoplay: true,
         arrows: false,
@@ -53,11 +55,41 @@ export default {
         autoplaySpeed: 5000
       }
     }
+  },
+  methods: {
+    displayBlock (target) {
+      if (this.display !== target) {
+        this.display = target
+      } else {
+        this.display = 'default'
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.logo{
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    object-fit: contain;
+  }
+  @media screen and (max-width: 355px) {
+    width: 100px;
+  }
+  @media screen and (max-width: 267px) {
+    width: 70px;
+  }
+  @media screen and (max-width: 246px) {
+    width: 50px;
+  }
+}
 .site{
   height: calc(100vh - 120px); // 120px = header (80px)+ footer(40px)
   @media screen and (max-width: 1024px) {
@@ -78,10 +110,13 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin: 0
+  }
+  @media screen and (max-width: 400px) {
+    align-items: center;
   }
 }
 .icons {
@@ -91,13 +126,14 @@ export default {
   padding-bottom: 30px;
   color: white;
   cursor: pointer;
+  margin-right: 50px;
 
   li {
     margin: 0 15px;
     display: flex;
     justify-content: center;
     align-items : center;
-    padding: 0.5em;
+    padding: 0.7em;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -121,6 +157,9 @@ export default {
   @media screen and (max-width: 580px) {
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 400px) {
+    margin: 0;
+  }
 }
 .form{
   width: 60%;
@@ -129,6 +168,17 @@ export default {
   }
   @media screen and (max-width: 470px) {
     width: 90%;
+  }
+}
+.award{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @media screen and (max-width: 1024px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 400px) {
+    display: none;
   }
 }
 </style>

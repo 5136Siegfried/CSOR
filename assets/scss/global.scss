@@ -35,6 +35,9 @@ a{
   text-decoration: none;
   user-select: none;
 }
+a, img, ul, li{
+  user-select: none;
+}
 ul{
   list-style: none;
 }

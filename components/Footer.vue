@@ -1,10 +1,7 @@
 <template>
   <footer>
     <ul>
-      <li>Devenir partenaire</li>
-      <li>Rapport d'activité</li>
-      <li>Espace Presse</li>
-      <li>Mentions légales</li>
+      <li><a href="/mentions">Mentions légales</a></li>
       <li>Plan du site </li>
     </ul>
     <div class="copyright">

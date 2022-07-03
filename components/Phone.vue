@@ -11,6 +11,7 @@ export default {
 <style lang="scss" scoped>
 a{
   color: white!important;
+  background-color: rgba(0,0,0,0.6);
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 0.1rem;
