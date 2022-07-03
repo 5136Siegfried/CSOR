@@ -30,7 +30,7 @@
               <textarea id="message" cols="30" name="message" placeholder="Votre Message" rows="7" />
               <input type="submit" value="Et hop c'est partie !">
             </form>
-          <a href ="CSOR_dons_pharmaciens_fin.pdf"  target="_blank" class="btn btn-red">
+          <a href ="/CSOR_dons_pharmaciens_fin.pdf" target="_blank" class="btn btn-red">
             Je consulte la liste
           </a>
         </div>
