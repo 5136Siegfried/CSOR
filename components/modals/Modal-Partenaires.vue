@@ -5,7 +5,7 @@
         <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
       </div>
       <img alt="photo restau du coeur" class="img-header" src="~/assets/img/sanitaire_original.jpg">
-      <h2>Les partenariats</h2>
+      <h2>Les partenariats d'actions</h2>
       <div class="content">
         <img
           alt="images graines de solidarité"
@@ -15,12 +15,14 @@
           width="332"
         >
         <p>
-          Le CSOR s’allie aux autres associations bordelaises oeuvrant auprès des publics précaires comme:
-          les Robins de la Rue, les Gratuits, les Restos du cœur (en période hivernale), la maraude du cœur.
-          Ainsi, nous rencontrons des personnes en dehors des parcours de maraude et pouvons évaluer les besoins en santé présents.
+          Au delà du soin, nos bénévoles ont un rôle préventif et informatif. Nous avons à coeur d’établir et de
+          maintenir un réseau partenarial avec plusieurs associations caritatives, des établissements de soins et des
+          travailleurs sociaux afin de renforcer les possibilités d’une prise en charge de qualité et un suivi hors
+          de la rue.
         </p>
-        <p class="important">
-          Rajouter un paragraphe sur les liens que nous avons avec le milieu médico-social
+        <p>
+          Nous intervenons aussi sur d’autres secteurs pour des évaluations et des suivis de soins (comme à Bordeaux
+          Lac) et le maintien du lien lors d’hospitalisation.
         </p>
         <div class="reseau">
           <h3>Notre réseau</h3>

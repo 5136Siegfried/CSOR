@@ -14,6 +14,9 @@
             Parce que nous avons besoin de moyens pour financer notre matériel médical et nos consommables pour les soins, toute aide financière est la bienvenue.
             De plus, nous avons pour objectif d’acquérir les équipements nécessaires à la sécurité de nos bénévoles lors des maraudes, ainsi que du matériel pédagogique pour nos formations internes.
           </p>
+          <p class="reduc">
+            Vous pouvez bénéficier d’une réduction d’impôt égale à 75% du montant de votre don, dans la limite de 1000€ de don par an et de 20% de votre revenu imposable.
+          </p>
           <div class="page_wrapper__content__text__donation">
             <h4>Je fais un don :</h4>
             <ul class="donation_list">
@@ -54,6 +57,13 @@ export default {
 }
 .page_action__content{
   margin-bottom: 30px;
+  .reduc{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $red;
+  }
   .schoko{
     color: $blue;
     font-weight: 700;

@@ -39,12 +39,14 @@
           <Circuit
             place="Gare"
             color="red"
+            :circuit="['Capucins', 'Cours de la Marne', 'Gare St Jean', 'Belcier']"
             partner="Graines<br> de Solidarité"
             :img-url="require('~/assets/img/partenaires/GDS.jpg')"
           />
           <Circuit
             place="S<sup>te</sup> Cath"
             color="blue"
+            :circuit="['La Victoire', 'Sainte-Catherine', 'Parking Victor Hugo', 'Place Saint-Projet', 'Grand Théâtre']"
             partner="Les Robins<br> de la Rue"
             :img-url="require('~/assets/img/partenaires/RDLR.jpg')"
           />
@@ -146,7 +148,9 @@ export default {
   justify-content: center;
   gap: 20px;
   > .circuit{
+    position: relative;
     flex: 1;
+    padding-bottom: 100px;
     max-width: 300px;
     min-width: 275px;
     @media screen and (max-width: 315px) {

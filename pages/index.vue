@@ -8,7 +8,6 @@
       <img src="~/assets/img/slider_home/5-min.jpg" alt="Photo du CSOR">
       <img src="~/assets/img/slider_home/6-min.jpg" alt="Photo du CSOR">
       <img src="~/assets/img/slider_home/7-min.jpg" alt="Photo du CSOR">
-      <img src="~/assets/img/slider_home/8-min.jpg" alt="Photo du CSOR">
     </VueSlickCarousel>
     <div class="site__wrapper">
       <img class="logo" src="~/assets/img/logo.jpg" alt="Logo du CSOR">
@@ -23,7 +22,11 @@
           <li @click="displayBlock('phone')">
             <img src="~/assets/img/icons/phone.svg" alt="Téléphone">
           </li>
-          <li><img src="~/assets/img/icons/fb.svg" alt="Facebook"></li>
+          <li>
+            <a href="https://www.facebook.com/CollectifSecoursOrientationdeRue/" target="_blank">
+              <img src="~/assets/img/icons/fb.svg" alt="Facebook">
+            </a>
+          </li>
         </ul>
       </div>
       <img class="award" src="~/assets/img/prix_jeunes_asso.png" alt="logo prix des jeunes asso">
@@ -91,7 +94,7 @@ export default {
   }
 }
 .site{
-  height: calc(100vh - 120px); // 120px = header (80px)+ footer(40px)
+  height: calc(100vh - 80px); // header (80px)
   @media screen and (max-width: 1024px) {
     min-height: 100vh;
   }
@@ -99,7 +102,7 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 100%;
   }
 }
@@ -111,6 +114,7 @@ export default {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-bottom: 2rem;
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin: 0
@@ -138,6 +142,9 @@ export default {
     width: 50px;
     height: 50px;
     background: rgba(0,0,0,0.4);
+    > a{
+      height: 100%;
+    }
     > img{
       width: 100%;
       height: 100%;

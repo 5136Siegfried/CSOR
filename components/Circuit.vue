@@ -2,15 +2,12 @@
   <div class="circuit" :class="color">
     <h4>Circuit <span v-html="place"></span></h4>
     <ul>
-      <li>capucins</li>
-      <li>Cours de la marne</li>
-      <li>Gare St Jean</li>
-      <li>Belcier</li>
+      <li v-for="item in circuit" :key="item">{{ item }}</li>
     </ul>
     <div class="partner">
       <p>
         En lien avec <br>
-       <span v-html="partner"></span>
+        <span v-html="partner"></span>
       </p>
       <img :src="imgUrl" alt="logo partenaire">
     </div>
@@ -19,12 +16,15 @@
 
 <script>
 export default {
-  name: 'circuit',
-  props: ['place', 'color', 'partner', 'imgUrl'],
+  name: 'Circuit',
+  props: ['place', 'color', 'circuit', 'partner', 'imgUrl'],
   methods: {
     getUrl (name) {
       return `/assets/img/partenaires/${name}.jpg`
     }
+  },
+  mounted () {
+    console.log(this.circuit)
   }
 }
 </script>
@@ -65,7 +65,11 @@ ul{
   }
 }
 .partner{
-  position: relative;
+  position: absolute;
+  width: 93%;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
   text-align: left;
   color: black;
   background-color: white;
