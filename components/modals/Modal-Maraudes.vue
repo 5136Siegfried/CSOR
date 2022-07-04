@@ -118,6 +118,7 @@ export default {
 }
 
 .utils{
+  margin-top: 50px;
   > h3{
     float: left;
     text-transform: uppercase;
@@ -132,12 +133,19 @@ export default {
     }
   }
   > p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: $blue;
     text-align: left;
     padding-top: 20px;
-    margin-left: 50%;
+    margin-left: 40%;
+  }
+  @media screen and (max-width: 876px) {
+    display: flex;
+    flex-direction: column;
+    h3, p{
+      margin: 0 30px;
+    }
   }
 }
 .circuits{
