@@ -97,6 +97,9 @@ export default {
   @media screen and (max-height: 835px)  {
     width: 70px;
   }
+  @media screen and (max-height: 730px)  {
+    display: none;
+  }
 }
 .site{
   height: calc(100vh - 80px); // header (80px)

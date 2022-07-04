@@ -63,6 +63,12 @@ export default {
   @media screen and (max-width: 275px) {
     margin: 1rem auto
   }
+  @media screen and (max-height: 730px) {
+    margin: 8rem auto
+  }
+  @media screen and (max-width: 320px) AND (max-height: 630px) {
+    margin: 3rem auto
+  }
 }
 h1{
   margin: 0;
@@ -88,6 +94,9 @@ p{
   width: 50%;
   margin: 30px auto;
   background-color: white;
+  @media screen and (max-height: 680px ) {
+    margin:  0 auto;
+  }
 }
 a{
   display: inline-block;
