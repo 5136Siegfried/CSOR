@@ -29,7 +29,9 @@
           </li>
         </ul>
       </div>
-      <img class="award" src="~/assets/img/prix_jeunes_asso.png" alt="logo prix des jeunes asso">
+      <a href="https://www.facebook.com/CollectifSecoursOrientationdeRue/posts/346357860405718" target="_blank">
+        <img class="award" src="~/assets/img/prix_jeunes_asso.png" alt="logo prix des jeunes asso">
+      </a>
     </div>
   </div>
 </template>
@@ -76,9 +78,9 @@ export default {
   display: none;
   @media screen and (max-width: 1024px) {
     display: block;
-    position: absolute;
-    top: 30px;
-    left: 50%;
+    //position: absolute;
+    //top: 30px;
+    margin: 30px 0 0 50%;
     transform: translateX(-50%);
     width: 130px;
     object-fit: contain;
@@ -91,6 +93,9 @@ export default {
   }
   @media screen and (max-width: 246px) {
     width: 50px;
+  }
+  @media screen and (max-height: 835px)  {
+    width: 70px;
   }
 }
 .site{
@@ -117,7 +122,9 @@ export default {
   padding-bottom: 2rem;
   @media screen and (max-width: 1024px) {
     width: 100%;
-    margin: 0
+    height: unset;
+    margin: 0;
+    justify-content: unset;
   }
   @media screen and (max-width: 400px) {
     align-items: center;
@@ -161,11 +168,21 @@ export default {
       margin: 20px
     }
   }
-  @media screen and (max-width: 580px) {
-    flex-wrap: wrap;
-  }
+  @media screen and (max-width: 1024px) {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-wrap: nowrap;
+}
   @media screen and (max-width: 400px) {
     margin: 0;
+  }
+  @media screen and (max-width: 307px) {
+    bottom: 10px;
+  }
+  @media screen and (max-height: 835px) {
+    bottom: -20px;
   }
 }
 .form{
@@ -179,12 +196,12 @@ export default {
 }
 .award{
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
   @media screen and (max-width: 1024px) {
     width: 150px;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 520px) {
     display: none;
   }
 }

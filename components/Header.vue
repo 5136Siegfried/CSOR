@@ -160,7 +160,7 @@ header{
     transform: translateX(-50%);
     margin: 30px auto 0 auto;
     width: 175px;
-    height: 190px;
+    //height: 190px;
     object-position: center;
     object-fit: cover;
     box-shadow: 0 0 15px rgba(108, 122, 137, 0.5);

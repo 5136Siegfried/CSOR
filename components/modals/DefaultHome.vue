@@ -3,7 +3,10 @@
     <p>
       Bienvenue sur le site du<br>
     </p>
-    <h1>Collectif de Secours et<br class="br"> Orientation de Rue !</h1>
+    <h1>
+      Collectif de Secours<br>
+      & Orientation de Rue !
+    </h1>
     <p>
       Ici vous pourrez en apprendre un peu plus sur ce que nous faisons, et qui sait, peut-être que ça vous
       donnera envie de nous rejoindre...
@@ -14,7 +17,8 @@
     <div class="separator" />
     <p>
       <b>Nos maraudes ont lieu<br>
-        les lundis, mercredis et vendredi, de 19h à 22h.</b>
+        les lundis, mercredis et vendredi,<br>
+        de 19h à 22h.</b>
     </p>
 
     <a href="/actions">Plus d'info ici</a>
@@ -50,7 +54,7 @@ export default {
     width: 70%;
   }
   @media screen and (max-width: 1024px) {
-    margin: 7rem auto;
+    margin: 2rem auto;
   }
   @media screen and (max-width: 400px){
     width: 90%;
