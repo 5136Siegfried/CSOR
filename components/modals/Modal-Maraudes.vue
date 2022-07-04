@@ -1,5 +1,5 @@
 <template>
-  <div class="modal_wrapper">
+  <div class="modal_wrapper" @click.stop="closeModal">
     <div class="modal origines">
       <div class="closeModal" @click="$emit('close-modal')">
         <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
@@ -81,6 +81,13 @@ export default {
   name: 'Maraudes',
   components: {
     Circuit
+  },
+  methods: {
+    closeModal (e) {
+      if (e.target === e.currentTarget) {
+        this.$emit('close-modal')
+      }
+    }
   }
 }
 </script>

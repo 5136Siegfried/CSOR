@@ -1,5 +1,5 @@
 <template>
-  <div class="modal_wrapper">
+  <div class="modal_wrapper"  @click.stop="closeModal">
     <div class="modal benevoles">
       <div class="closeModal" @click="$emit('close-modal')">
         <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
@@ -93,7 +93,14 @@
 
 <script>
 export default {
-  name: 'Benevoles'
+  name: 'Benevoles',
+  methods: {
+    closeModal (e) {
+      if (e.target === e.currentTarget) {
+        this.$emit('close-modal')
+      }
+    }
+  }
 }
 </script>
 
