@@ -1,13 +1,15 @@
 <template>
   <div class="circuit" :class="color">
-    <h4>Circuit <span v-html="place"></span></h4>
+    <h4>Circuit <span v-html="place" /></h4>
     <ul>
-      <li v-for="item in circuit" :key="item">{{ item }}</li>
+      <li v-for="item in circuit" :key="item">
+        {{ item }}
+      </li>
     </ul>
     <div class="partner">
       <p>
         En lien avec <br>
-        <span v-html="partner"></span>
+        <span v-html="partner" />
       </p>
       <img :src="imgUrl" alt="logo partenaire">
     </div>
@@ -17,14 +19,14 @@
 <script>
 export default {
   name: 'Circuit',
+  mounted () {
+    console.log(this.circuit)
+  },
   props: ['place', 'color', 'circuit', 'partner', 'imgUrl'],
   methods: {
     getUrl (name) {
       return `/assets/img/partenaires/${name}.jpg`
     }
-  },
-  mounted () {
-    console.log(this.circuit)
   }
 }
 </script>

@@ -137,7 +137,7 @@
                 <div class="images">
                   <a href="https://diaconatbordeaux.fr/" target="_blank">
                     <img src="~/assets/img/partenaires/Diaconat-bordeaux.jpg" alt="logo Diaconat">
-                </a>
+                  </a>
                   <a href="https://www.bordeaux.fr/o88605/bordeaux-metropole-mediation" target="_blank">
                     <img src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg" alt="logo Bordeaux Métropole Médiation">
                   </a>

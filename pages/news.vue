@@ -2,7 +2,9 @@
   <div class="site">
     <div class="site__wrapper">
       <h1>Les <b>news !</b></h1>
-      <div class="content"><p>arrive très bientôt ;)</p></div>
+      <div class="content">
+        <p>arrive très bientôt ;)</p>
+      </div>
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="modal_wrapper"  @click.stop="closeModal">
+  <div class="modal_wrapper" @click.stop="closeModal">
     <div class="modal origines">
       <div class="closeModal" @click="$emit('close-modal')">
         <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
@@ -7,7 +7,7 @@
       <img class="img-header" src="~/assets/img/cover-croix-bleues.jpg" alt="photo des croix bleues">
       <h2>D'où on vient</h2>
       <div class="content">
-        <img src="~/assets/img/croix_bleue_manif.jpeg" width="528" height="328" alt="images croix bleues">
+        <img src="~/assets/img/croix_bleue_manif.jpeg" width="528" height="352" alt="images croix bleues">
 
         <p>
           <strong>

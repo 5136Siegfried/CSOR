@@ -1,16 +1,20 @@
 <template>
-  <div class="modal_wrapper"  @click.stop="closeModal">
+  <div class="modal_wrapper" @click.stop="closeModal">
     <div class="modal origines">
       <div class="closeModal" @click="$emit('close-modal')">
         <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
       </div>
-      <img class="img-header" src="~/assets/img/formation_original.jpg" alt="photo prise pendant une formation">
+      <img
+        class="img-header"
+        src="~/assets/img/formation_original.jpg"
+        alt="photo prise pendant une formation"
+      >
       <h2>Les formations internes</h2>
       <div class="content">
         <img
           src="~/assets/img/ill_formation.jpg"
           width="500"
-          height="240"
+          height="298"
           alt="images exemple formation"
         >
 

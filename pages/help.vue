@@ -13,9 +13,10 @@
           <p>
             Parce que nous avons besoin de moyens pour financer notre matériel médical et nos consommables pour les soins, toute aide financière est la bienvenue.
             De plus, nous avons pour objectif d’acquérir les équipements nécessaires à la sécurité de nos bénévoles lors des maraudes, ainsi que du matériel pédagogique pour nos formations internes.
-            </p>
-          <p>Nous finançons aussi depuis peu la location d’un petit local en ville pour entreposer tout notre
-                  matériel et notre stock de consommables.
+          </p>
+          <p>
+            Nous finançons aussi depuis peu la location d’un petit local en ville pour entreposer tout notre
+            matériel et notre stock de consommables.
           </p>
           <p class="reduc">
             Vous pouvez bénéficier d’une réduction d’impôt égale à 75% du montant de votre don, dans la limite de 1000€ de don par an et de 20% de votre revenu imposable.

@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <template>
   <div class="modal_wrapper" @click.stop="closeModal">
     <div class="modal origines">

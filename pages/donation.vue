@@ -23,14 +23,14 @@
           <p class="reduc">
             Les dons en nature peuvent également donner droit à une déduction fiscale ! On dit ça comme ça...
           </p>
-            <form @submit.prevent>
-              <h3>Laisse un message !</h3>
-              <input id="name" autocomplete="off" name="name" placeholder="Nom et Prénom" type="text">
-              <input id="email" autocomplete="off" name="email" placeholder="Email" type="email">
-              <textarea id="message" cols="30" name="message" placeholder="Votre Message" rows="7" />
-              <input type="submit" value="Et hop c'est partie !">
-            </form>
-          <a href ="/CSOR_dons_pharmaciens_fin.pdf" target="_blank" class="btn btn-red">
+          <form @submit.prevent>
+            <h3>Laisse un message !</h3>
+            <input id="name" autocomplete="off" name="name" placeholder="Nom et Prénom" type="text">
+            <input id="email" autocomplete="off" name="email" placeholder="Email" type="email">
+            <textarea id="message" cols="30" name="message" placeholder="Votre Message" rows="7" />
+            <input type="submit" value="Et hop c'est partie !">
+          </form>
+          <a href="/CSOR_dons_pharmaciens_fin.pdf" target="_blank" class="btn btn-red">
             Je consulte la liste
           </a>
         </div>
@@ -70,21 +70,6 @@ p{
     margin: 30px auto;
   }
 
-}
-button{
-  display: block;
-  margin: auto;
-  &.btn-red{
-    margin-top: 2rem;
-  }
-  &.btn-blue{
-    margin-top: 1rem;
-  }
-}
-.page_wrapper__content{
-  p{
-    margin: 2rem 0;
-  }
 }
 .page_wrapper__content__text__donation{
   margin-top: 2rem;

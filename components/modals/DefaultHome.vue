@@ -69,13 +69,9 @@ h1{
   padding: 0;
   font-size: 1.3rem;
   font-weight: 700;
-  .br{
-    display: none;
-  }
   @media  screen and (max-width: 950px) {
     text-align: center;
     margin: auto;
-    .br{display: inline}
   }
 }
 p{
