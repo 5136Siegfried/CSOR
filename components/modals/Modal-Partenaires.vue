@@ -75,7 +75,7 @@
                 title="Entraide protestante"
               >
             </a>
-            <a href="https://www.croix-rouge.fr/Annuaire/UNITE-LOCALE-DE-BORDEAUX10">
+            <a href="https://www.croix-rouge.fr/Annuaire/UNITE-LOCALE-DE-BORDEAUX10" target="_blank">
               <img
                 alt="Croix-Rouge"
                 class="logo_reseau"

@@ -237,6 +237,11 @@ textarea{
       width: 100%;
       height: 100%;
     }
+    @media screen and (max-width: 1024px) {
+      border-radius: 50%;
+      padding: 0.5em;
+      background: rgba(229,229,229, 0.6);
+    }
   }
   h2{
     display: inline-block;
