@@ -5,7 +5,7 @@
         <img src="~assets/img/IconsCrossDark.svg" alt="fermer la fenêtre">
       </div>
       <img class="img-header" src="~/assets/img/cover-croix-bleues.jpg" alt="photo des croix bleues">
-      <h2>D'ou on vient</h2>
+      <h2>D'où on vient</h2>
       <div class="content">
         <img src="~/assets/img/croix_bleue_manif.jpeg" width="528" height="328" alt="images croix bleues">
 
@@ -19,16 +19,16 @@
         </p>
 
         <p>
-          On peut dire que l’esprit et les valeurs qui nous composent aujourd’hui était déjà là à l’époque...
+          On peut dire que l’esprit et les valeurs qui nous composent aujourd’hui étaient déjà là à l’époque...
           <strong>Deux années plus tard, on bat encore le pavé, moins de lacrymogènes et plus de paroles, mais la
             volonté de panser les plaies et d’apaiser les esprits est toujours la même</strong>.
         </p>
 
         <p>
           Pendant le retour au calme progressif, notre groupe, pas encore officiel mais reconnu pour ses actions, a été
-          contacté par l’association Graine de Solidarité. Cette association de distribution alimentaire s’était trouvé
+          contacté par l’association <strong>Graine de Solidarité</strong>. Cette association de distribution alimentaire s’était trouvé
           plusieurs fois confrontée à des sans-abris blessés ou malades, et n’avait pas la possibilité de leur apporter
-          les soins nécessaires.
+          les soins nécessaires ou des informations sur les structures pour se faire aider.
         </p>
 
         <p>
@@ -53,7 +53,7 @@
           suivi, le groupe n’était pas encore le CSOR, au mieux une bande d’enthousiastes pleins de bonnes
           intentions.
         </p>
-        <p><strong>C’est en Juin 2020 que l’association est officiellement crée !</strong></p>
+        <p><strong>C’est en Juin 2020 que l’association est officiellement créée !</strong></p>
 
         <p>
           Pour en savoir plus, je t’invite à continuer ta visite du site, on y parle de gens engagés, de gens qui ont
