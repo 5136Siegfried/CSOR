@@ -134,12 +134,14 @@
               </div>
               <div class="other">
                 <p><b>MAIS AUSSI :</b></p>
-                <a href="https://diaconatbordeaux.fr/" target="_blank">
-                  <img src="~/assets/img/partenaires/Diaconat-bordeaux.jpg" alt="logo Diaconat">
+                <div class="images">
+                  <a href="https://diaconatbordeaux.fr/" target="_blank">
+                    <img src="~/assets/img/partenaires/Diaconat-bordeaux.jpg" alt="logo Diaconat">
                 </a>
-                <a href="https://www.bordeaux.fr/o88605/bordeaux-metropole-mediation" target="_blank">
-                  <img src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg" alt="logo Bordeaux Métropole Médiation">
-                </a>
+                  <a href="https://www.bordeaux.fr/o88605/bordeaux-metropole-mediation" target="_blank">
+                    <img src="~/assets/img/partenaires/Bordeaux-metropole-mediation.jpg" alt="logo Bordeaux Métropole Médiation">
+                  </a>
+                </div>
               </div>
             </div>
           </section>
@@ -311,7 +313,7 @@ section.sante{
         }
       }
       @media screen and (max-width: 790px) {
-        margin: 10px 0;
+        margin: 20px 0;
         img{ margin: 0 10px}
         &:nth-child(odd){
           //flex-direction: row-reverse;
@@ -360,6 +362,14 @@ section.social{
       img{margin: 0 10px}
     }
     >div.other{
+      > .images{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        img{
+          width: 100%;
+        }
+      }
       > a{
         margin: 15px
       }
@@ -395,20 +405,20 @@ section.maraudes {
     > .left > div, > .right > div:not(.other) {
       display: flex;
       align-items: center;
-      margin: 30px 0;
+      margin: 20px 0;
       img{
         margin-right: 30px;
-        height: 100%;
+        width: 100px;
         object-fit: contain;
       }
     }
     .other .images{
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
       img{
         align-self: center;
+        width: 100%;
       }
     }
 
