@@ -22,7 +22,7 @@
               <input id="name" autocomplete="off" name="name" placeholder="Nom et Prénom" type="text">
               <input id="email" autocomplete="off" name="email" placeholder="Email" type="email">
               <textarea id="message" cols="30" name="message" placeholder="Votre Message" rows="7" />
-              <input type="submit" value="Et hop c'est partie !">
+              <input type="submit" value="Et hop c'est parti !">
             </form>
           </div>
         </div>
