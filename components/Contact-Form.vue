@@ -30,6 +30,9 @@ form{
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
+    @media screen and (max-height: 800px) {
+      font-size: 1.5rem;
+    }
   }
   input, textarea{
     padding: 1rem 1.5rem;
@@ -39,6 +42,9 @@ form{
     border-radius: 10px;
     &::placeholder{
       color: black;
+    }
+    @media screen and (max-height: 800px) {
+      padding: 0.5rem 1rem
     }
   }
   input[type="submit"]{
@@ -56,6 +62,9 @@ form{
     &:hover{
       color: black;
       background: white;
+    }
+    @media screen and (max-height: 800px) {
+      margin: 0 auto
     }
   }
   @media screen and (max-width: 1024px) {
