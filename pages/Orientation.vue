@@ -16,6 +16,10 @@
                 <li><b>112 :</b> Numéro d'urgence européen</li>
               </ul>
               <ul>
+                <li class="smallLH">
+                  <b>114 :</b> Numéro d'urgence pour les sourds et malentendants. <br>
+                  <span class="little">Accessible en permanence par visiophonie, tchat, SMS ou fax.</span>
+                </li>
                 <li><b>115 :</b> Numéro d'urgence sociale</li>
                 <li><b>119 :</b> Numéro d'urgence Enfants en danger</li>
                 <li><b>3114 :</b> Numéro prévention du Suicide</li>
@@ -280,6 +284,13 @@ section.urgences{
       padding-left: 20px;
       li {
         margin: 0.5em 0;
+
+        &.smallLH{
+          line-height: 0.9em;
+        }
+        span.little{
+          font-size: 0.8em;
+        }
         @media screen and (max-width: 455px) {
           margin: 1em 0
         }
