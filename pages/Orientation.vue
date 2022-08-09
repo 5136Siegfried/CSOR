@@ -118,7 +118,7 @@
                 <img src="~/assets/img/partenaires/CIAO.jpg" alt="logo CIAO">
                 <div class="info">
                   <p>
-                    <b>entre d'Accueil d'Information et d'Orientation</b><br>
+                    <b>Centre d'Accueil d'Information et d'Orientation</b><br>
                     05 56 33 47 80 Du lundi au vendredi (sauf fermé le mardi matin) :<br>
                     9h15 à 12h et 14h à 16h30<br>
                     6 rue du Novicat (Rue en face de l'Eglise Ste Croix)<br>

@@ -17,11 +17,8 @@
         >
         <p>Tout au long de l’année, nous réalisons des maraudes sanitaires plusieurs fois par semaine en soirée.</p>
         <p>
-          Au cours de ces maraudes, nous réalisons des soins de premiers secours ( ou 1<sup>ère</sup> necessité) auprès
-          des
-          personnes en situation de précarité. Nous réalisons des pansements plus ou moins complexes selon le niveau
-          de compétences des équipiers et l’expertise des professionnels sur le terrain sur des plaies diverses
-          (brûlures, morsures, coupures,...).
+          Au cours de ces maraudes, nous réalisons des soins de premiers secours (ou de 1<sup>ère</sup> nécessité) auprès
+          des personnes en situation de précarité. Nous réalisons des pansements plus ou moins complexes selon le niveau de compétences des équipiers et l’expertise des professionnels sur le terrain pour des plaies diverses (brûlures, morsures, coupures...).
         </p>
         <p>
           L’objectif principal est de créer un climat de confiance avec les personnes rencontrées et de leur permettre

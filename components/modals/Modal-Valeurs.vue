@@ -31,8 +31,7 @@
         >
         <ul>
           <li>
-            <strong>Recréer un lien avec les personnes en difficulté </strong>: leur redonner l’attention et l’écoute
-            dont ils ne bénéficient plus en étant sortant du système social ;
+            <strong>Recréer un lien avec les personnes en difficulté </strong>: leur redonner l'attention et l'écoute dont ils ne bénéficient plus en étant sortis du système social ;
           </li>
           <li>
             <strong>Pratiquer une véritable écoute bienveillante </strong>: ne pas infantiliser les gens en décidant à
@@ -60,9 +59,8 @@
         <img class="floatRight" src="~/assets/img/ill_valeurs3.jpg" alt="images croix bleues">
 
         <p>
-          Nous avons découvert au fil des rues un véritable besoin, au-delà même de la santé, un besoin humain et un
-          besoin de repères auquel nous nous sommes donné pour mission de répondre. Dans le respect, la bienveillance,
-          la patience, nous essayons de rétablir un lien avec des personnes devant lesquelles on détourne souvent le
+          Nous avons découvert au fil des rues un véritable besoin, au-delà même de la santé, un besoin humain et un besoin de repères; nous nous sommes donné pour mission d'y répondre.
+          Dans le respect, la bienveillance, la patience, nous essayons de rétablir un lien avec des personnes devant lesquelles on détourne souvent le
           regard et qui se sentent perdues et délaissées. Rétablir une confiance perdue pour permettre un dialogue
           ouvert et une compréhension des attentes de chacun. Et faire des pansements, évidemment. Et indiquer le
           service hospitalier le plus adapté, aussi.

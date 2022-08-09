@@ -7,7 +7,7 @@
     <div class="header__wrapper" :class="{active : isActive}">
       <nav class="nav_left">
         <ul>
-          <li><a href="/about">Qui somme-nous ?</a></li>
+          <li><a href="/about">Qui sommes-nous ?</a></li>
           <li><a href="/actions">Nos actions</a></li>
           <li><a href="/news">Les actus</a></li>
           <li><a href="/orientation">Orientations</a></li>

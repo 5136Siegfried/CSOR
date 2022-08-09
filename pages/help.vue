@@ -41,7 +41,7 @@
             </ul>
           </div>
           <p class="schoko">
-            (On accepte aussi les chèques, les espèces et les Schokobon !)
+            (On accepte aussi les chèques, les espèces et les abricots secs ou une chocolatine !)
           </p>
         </div>
       </div>

@@ -1,16 +1,66 @@
 <template>
-  <form @submit.prevent>
+  <form @submit.prevent="sendMail">
     <h3>Contactez-nous</h3>
-    <input id="name" type="text" name="name" placeholder="Nom et Prénom" autocomplete="off">
-    <input id="email" type="email" name="email" placeholder="Email" autocomplete="off">
-    <textarea id="message" name="message" cols="30" rows="7" placeholder="Votre Message" />
+    <input
+      id="name"
+      v-model="form.name"
+      type="text"
+      name="name"
+      placeholder="Nom et Prénom"
+      autocomplete="off"
+    >
+    <input
+      id="email"
+      v-model="form.email"
+      type="email"
+      name="email"
+      placeholder="Email"
+      autocomplete="off"
+    >
+    <textarea
+      id="message"
+      v-model="form.message"
+      name="message"
+      cols="30"
+      rows="7"
+      placeholder="Votre Message"
+    />
     <input type="submit" value="Envoyer">
   </form>
 </template>
 
 <script>
 export default {
-  name: 'ContactForm'
+  name: 'ContactForm',
+  data () {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: ''
+      }
+    }
+  },
+  methods: {
+    sendMail () {
+      if (this.form.name !== '' && this.form.email !== '' && this.form.message !== '') {
+        // console.log(this.form.name)
+        // console.log(this.form.email)
+        // console.log(this.form.message)
+        const formData = new FormData()
+        formData.append('name', this.form.name)
+        formData.append('email', this.form.email)
+        formData.append('message', this.form.message)
+
+        fetch('https://www.csor.fr/testmail.php', {
+          mode: 'no-cors',
+          method: 'POST'
+        })
+      } else {
+        console.error('Information(s) manquante(s) (name/email/message obligatoire)')
+      }
+    }
+  }
 }
 </script>
 

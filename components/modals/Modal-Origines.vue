@@ -19,21 +19,17 @@
         </p>
 
         <p>
-          On peut dire que l’esprit et les valeurs qui nous composent aujourd’hui étaient déjà là à l’époque...
-          <strong>Deux années plus tard, on bat encore le pavé, moins de lacrymogènes et plus de paroles, mais la
-            volonté de panser les plaies et d’apaiser les esprits est toujours la même</strong>.
+          On peut dire que l’esprit et les valeurs qui nous animent aujourd’hui étaient déjà là à l’époque...
+          <strong>Deux années plus tard, on bat encore le pavé; moins de lacrymogènes et plus de paroles et la volonté toujours tenace de panser les plaies et d’apaiser les esprits.</strong>.
         </p>
 
         <p>
           Pendant le retour au calme progressif, notre groupe, pas encore officiel mais reconnu pour ses actions, a été
-          contacté par l’association <strong>Graine de Solidarité</strong>. Cette association de distribution alimentaire s’était trouvé
-          plusieurs fois confrontée à des sans-abris blessés ou malades, et n’avait pas la possibilité de leur apporter
-          les soins nécessaires ou des informations sur les structures pour se faire aider.
+          contacté par l’association <strong>Graines de Solidarité</strong>. Cette association de distribution alimentaire s’était trouvée plusieurs fois confrontée à des sans-abris blessés ou malades, et n’avait pas la possibilité de leur apporter les soins nécessaires ou des informations sur les structures d'aide.
         </p>
 
         <p>
-          <strong>Le partenariat qu’ils nous ont proposé a lancé la machine qui aboutirait à la création du
-            CSOR</strong>.
+          <strong>Le partenariat qu’ils nous ont proposé a lancé la machine qui aboutira à la création du CSOR.</strong>.
         </p>
 
         <p>
