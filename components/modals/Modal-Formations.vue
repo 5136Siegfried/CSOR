@@ -11,19 +11,13 @@
       >
       <h2>Les formations internes</h2>
       <div class="content">
+        <p>
+          Au cours de l'année, des professionnel.le.s du soin et de la santé mettent à disposition leurs compétences pour transmettre aux bénévoles du CSOR des notions importantes et utiles pour nos maraudes.
+        </p>
         <img
           src="~/assets/img/ill_formation.jpg"
-          width="500"
-          height="298"
           alt="images exemple formation"
         >
-
-        <p>
-          Chaque mois, les bénévoles adhérents de l’association peuvent participer à des ateliers de formations non
-          diplômantes sur des sujets variés comme les gestes d'urgence, les différents types de pansements,
-          l’addictologie, ... Certaines des formations proposées sont ouvertes aux autres associations travaillant
-          auprès du même public.
-        </p>
       </div>
 
       <button @click="$emit('close-modal')">
@@ -57,17 +51,24 @@ export default {
 }
 
 .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   p {
-    margin: 1em 0
+    margin: 1em 0;
   }
-
   strong {
     font-weight: 700;
   }
-
   img {
-    float: right;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
     margin-left: 2em;
+  }
+
+  @media screen and (max-width: 750px) {
+    display: block;
   }
 }
 </style>

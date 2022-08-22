@@ -37,8 +37,8 @@
         <FicheMembre
           name="Jess"
           age="35"
-          description="Aide-soignante et la plus cool de toutes les présidentes du CSOR"
-          :img-url="require('~/assets/img/membres/jess.jpg')"
+          description="Aide-soignante reconvertie du bâtiment à la santé"
+          :img-url="require('~/assets/img/membres/jess2.jpg')"
           theme="1"
         />
 

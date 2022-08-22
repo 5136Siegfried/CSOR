@@ -1,6 +1,6 @@
 <template>
   <div class="card" :class="`style${theme}`">
-    <img :src="imgUrl" :alt="`Photo de ${name}`">
+    <img width="136" height="136" :src="imgUrl" :alt="`Photo de ${name}`">
     <p class="info">
       {{ name }} - {{ age }} ans
     </p>
@@ -45,7 +45,9 @@ export default {
   width: 200px;
   margin: 0 10px;
   img{
-    //width: 100%;
+    border: 1px solid white;
+    object-position: top;
+    object-fit: cover;
   }
   p{
     font-size: 0.8rem;
