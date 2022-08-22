@@ -19,9 +19,7 @@
 <script>
 export default {
   name: 'Circuit',
-  mounted () {
-    console.log(this.circuit)
-  },
+  // eslint-disable-next-line vue/require-prop-types
   props: ['place', 'color', 'circuit', 'partner', 'imgUrl'],
   methods: {
     getUrl (name) {

@@ -57,6 +57,7 @@ export default {
           method: 'POST'
         })
       } else {
+        // eslint-disable-next-line no-console
         console.error('Information(s) manquante(s) (name/email/message obligatoire)')
       }
     }
