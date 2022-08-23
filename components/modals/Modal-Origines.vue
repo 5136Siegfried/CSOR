@@ -14,7 +14,7 @@
             Si aujourd’hui nous sommes un collectif de maraudeurs dévoué à l’écoute et aux soins des personnes
             sans-abris, notre groupe a pris racine dans la période troublée des Gilets Jaunes
           </strong>. C’est là que les membres fondateurs de l’actuel CSOR se sont rencontrés et associés pour former
-          le groupe de Street-Médics les Croix-Bleues, entièrement consacré au secours des participants aux manifestations qui, nous le savons tous, ont atteints des
+          le groupe de Street-Médics les Croix-Bleues, entièrement consacré au secours des participants aux manifestations qui, nous le savons tous, ont atteint des
           sommets de violences à une période.
         </p>
 
