@@ -17,12 +17,40 @@
               pas
               !
             </p>
-            <form @submit.prevent>
+            <form id="formJoin" @submit.prevent="sendMail">
               <h3>Laisse un message !</h3>
-              <input id="name" autocomplete="off" name="name" placeholder="Nom et Prénom" type="text">
-              <input id="email" autocomplete="off" name="email" placeholder="Email" type="email">
-              <textarea id="message" cols="30" name="message" placeholder="Votre Message" rows="7" />
-              <input type="submit" value="Et hop c'est parti !">
+              <input
+                id="name"
+                v-model="form.name"
+                autocomplete="off"
+                name="name"
+                placeholder="Nom et Prénom"
+                type="text"
+              >
+              <input
+                id="email"
+                v-model="form.email"
+                autocomplete="off"
+                name="email"
+                placeholder="Email"
+                type="email"
+              >
+              <textarea
+                id="message"
+                v-model="form.message"
+                cols="30"
+                name="message"
+                placeholder="Votre Message"
+                rows="7"
+              />
+              <p
+                v-if="formMessage"
+                class="formMessage"
+                :class="formMessage.error ? 'red' : 'green'"
+              >
+                {{ formMessage.text }}
+              </p>
+              <input type="submit" class="btnSubmit" value="Et hop c'est parti !">
             </form>
           </div>
         </div>
@@ -32,8 +60,54 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-  name: 'Join'
+  name: 'Join',
+  data () {
+    return {
+      form: {
+        name: null,
+        email: null,
+        message: null
+      },
+      formMessage: {
+        error: false,
+        text: ''
+      }
+    }
+  },
+  methods: {
+    sendMail () {
+      const btn = document.querySelector('.btnSubmit')
+
+      if (!this.form.name || !this.form.email || !this.form.message) {
+        this.formMessage.error = true
+        this.formMessage.text = 'Merci de renseigner toutes les informations.'
+      } else {
+        btn.disabled = true
+        btn.value = 'Envoie du message ...'
+        const data = {
+          service_id: 'service_hggluwj',
+          template_id: 'template_lo3m5vn',
+          user_id: 'WxvWqXjlCWF7c_ake',
+          template_params: {
+            name: this.form.name,
+            email: this.form.email,
+            message: this.form.message
+          }
+        }
+        axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
+          .then((res) => {
+            if (res.status === 200) {
+              this.formMessage.text = 'Votre message a bien été envoyé.'
+              btn.value = 'Et hop c\'est parti !'
+              btn.disabled = false
+            }
+          })
+      }
+    }
+  }
 }
 </script>
 
@@ -67,6 +141,12 @@ form {
     &::placeholder {
       color: white;
     }
+  }
+  .formMessage.green{
+    color: green;
+  }
+  .formMessage.red{
+    color: red;
   }
   input[type="submit"] {
     color: white;

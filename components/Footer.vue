@@ -2,7 +2,7 @@
   <footer>
     <ul>
       <li><a href="/mentions">Mentions légales</a></li>
-      <li>Plan du site </li>
+      <li><a href="/sitemap.xml">Plan du site</a> </li>
     </ul>
     <div class="copyright">
       <p>&copy; Copyright Collectif de Secours & Orientation de Rue - 2022</p>

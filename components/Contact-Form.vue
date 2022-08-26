@@ -1,64 +1,87 @@
 <template>
-  <form @submit.prevent="sendMail">
+  <form id="formJoin" @submit.prevent="sendMail">
     <h3>Contactez-nous</h3>
     <input
       id="name"
       v-model="form.name"
-      type="text"
+      autocomplete="off"
       name="name"
       placeholder="Nom et Prénom"
-      autocomplete="off"
+      type="text"
     >
     <input
       id="email"
       v-model="form.email"
-      type="email"
+      autocomplete="off"
       name="email"
       placeholder="Email"
-      autocomplete="off"
+      type="email"
     >
     <textarea
       id="message"
       v-model="form.message"
-      name="message"
       cols="30"
-      rows="7"
+      name="message"
       placeholder="Votre Message"
+      rows="7"
     />
-    <input type="submit" value="Envoyer">
+    <p
+      v-if="formMessage"
+      class="formMessage"
+      :class="formMessage.error ? 'red' : 'green'"
+    >
+      {{ formMessage.text }}
+    </p>
+    <input type="submit" class="btnSubmit" value="Envoyer">
   </form>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'ContactForm',
   data () {
     return {
       form: {
-        name: '',
-        email: '',
-        message: ''
+        name: null,
+        email: null,
+        message: null
+      },
+      formMessage: {
+        error: false,
+        text: ''
       }
     }
   },
   methods: {
     sendMail () {
-      if (this.form.name !== '' && this.form.email !== '' && this.form.message !== '') {
-        // console.log(this.form.name)
-        // console.log(this.form.email)
-        // console.log(this.form.message)
-        const formData = new FormData()
-        formData.append('name', this.form.name)
-        formData.append('email', this.form.email)
-        formData.append('message', this.form.message)
+      const btn = document.querySelector('.btnSubmit')
 
-        fetch('https://www.csor.fr/testmail.php', {
-          mode: 'no-cors',
-          method: 'POST'
-        })
+      if (!this.form.name || !this.form.email || !this.form.message) {
+        this.formMessage.error = true
+        this.formMessage.text = 'Merci de renseigner toutes les informations.'
       } else {
-        // eslint-disable-next-line no-console
-        console.error('Information(s) manquante(s) (name/email/message obligatoire)')
+        btn.disabled = true
+        btn.value = 'Envoie du message ...'
+        const data = {
+          service_id: 'service_hggluwj',
+          template_id: 'template_lo3m5vn',
+          user_id: 'WxvWqXjlCWF7c_ake',
+          template_params: {
+            name: this.form.name,
+            email: this.form.email,
+            message: this.form.message
+          }
+        }
+        axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
+          .then((res) => {
+            if (res.status === 200) {
+              this.formMessage.text = 'Votre message a bien été envoyé.'
+              btn.value = 'Envoyer'
+              btn.disabled = false
+            }
+          })
       }
     }
   }
@@ -98,6 +121,12 @@ form{
       padding: 0.5rem 1rem
     }
   }
+  .formMessage.green{
+    color: greenyellow;
+  }
+  .formMessage.red{
+    color: #ff4141;
+  }
   input[type="submit"]{
     color: white;
     font-size: 1.2rem;
@@ -107,7 +136,7 @@ form{
     margin: 0 auto 1rem auto;
     border: 4px solid white;
     border-radius: 20px;
-    width: 50%;
+    min-width: 50%;
     cursor: pointer;
 
     &:hover{
