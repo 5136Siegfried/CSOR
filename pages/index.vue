@@ -82,7 +82,7 @@ export default {
     //top: 30px;
     margin: 30px 0 0 50%;
     transform: translateX(-50%);
-    width: 130px;
+    width: 100px;
     object-fit: contain;
   }
   @media screen and (max-width: 355px) {
@@ -173,7 +173,7 @@ export default {
   }
   @media screen and (max-width: 1024px) {
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   flex-wrap: nowrap;

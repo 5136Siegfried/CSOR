@@ -88,12 +88,13 @@ export default {
         btn.disabled = true
         btn.value = 'Envoie du message ...'
         const data = {
-          service_id: 'service_hggluwj',
-          template_id: 'template_lo3m5vn',
-          user_id: 'WxvWqXjlCWF7c_ake',
+          service_id: 'service_60ovomj',
+          template_id: 'template_9dq9hru',
+          user_id: 'kyXZSYMRcmfQI_5hV',
           template_params: {
             name: this.form.name,
             email: this.form.email,
+            topic: 'Nous rejoindre',
             message: this.form.message
           }
         }

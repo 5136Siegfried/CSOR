@@ -17,6 +17,14 @@
       placeholder="Email"
       type="email"
     >
+    <input
+      id="topic"
+      v-model="form.topic"
+      autocomplete="off"
+      name="topic"
+      placeholder="Sujet"
+      type="text"
+    >
     <textarea
       id="message"
       v-model="form.message"
@@ -46,6 +54,7 @@ export default {
       form: {
         name: null,
         email: null,
+        topic: null,
         message: null
       },
       formMessage: {
@@ -65,12 +74,13 @@ export default {
         btn.disabled = true
         btn.value = 'Envoie du message ...'
         const data = {
-          service_id: 'service_hggluwj',
-          template_id: 'template_lo3m5vn',
-          user_id: 'WxvWqXjlCWF7c_ake',
+          service_id: 'service_60ovomj',
+          template_id: 'template_9dq9hru',
+          user_id: 'kyXZSYMRcmfQI_5hV',
           template_params: {
             name: this.form.name,
             email: this.form.email,
+            topic: this.form.topic,
             message: this.form.message
           }
         }
@@ -149,8 +159,8 @@ form{
   }
   @media screen and (max-width: 1024px) {
     width: 90%;
-    gap: 40px;
-    margin: 5rem auto;
+    gap: 30px;
+    margin: 2rem auto;
     padding: 1rem
   }
   @media screen and (max-width: 360px) {
