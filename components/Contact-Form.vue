@@ -1,6 +1,6 @@
 <template>
-  <form id="formJoin" @submit.prevent="sendMail">
-    <h3>Contactez-nous</h3>
+  <form id="formJoin" @submit.prevent="sendMail" class="box">
+    <h3>Nous <span>contacter</span></h3>
     <input
       id="name"
       v-model="form.name"
@@ -31,7 +31,7 @@
       cols="30"
       name="message"
       placeholder="Votre Message"
-      rows="7"
+      rows="5"
     />
     <p
       v-if="formMessage"
@@ -67,7 +67,7 @@ export default {
     sendMail () {
       const btn = document.querySelector('.btnSubmit')
 
-      if (!this.form.name || !this.form.email || !this.form.message) {
+      if (!this.form.name || !this.form.email || !this.form.topic || !this.form.message) {
         this.formMessage.error = true
         this.formMessage.text = 'Merci de renseigner toutes les informations.'
       } else {
@@ -110,12 +110,27 @@ form{
   border-radius: 30px;
   background: rgba(0,0,0,0.4);
   h3{
+    text-transform: uppercase;
     color: white;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    @media screen and (max-height: 800px) {
-      font-size: 1.5rem;
+    text-align: left;
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: 500;
+    @media screen and (max-width: 1024px) {
+      color: $blue;
+      font-weight: 500;
+      font-size: 10vw;
+      text-align: left;
+      line-height: 13vw;
+
+      >span{
+        font-weight: 700;
+        display: block;
+      }
+    }
+    > span{
+      display: block;
+      font-weight: 700;
     }
   }
   input, textarea{
@@ -126,6 +141,14 @@ form{
     border-radius: 10px;
     &::placeholder{
       color: black;
+      @media screen and (max-width: 1024px) {
+        color: $blue
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      margin: 10px 0;
+      background: lighten($blue, 65%);
     }
     @media screen and (max-height: 800px) {
       padding: 0.5rem 1rem
@@ -143,7 +166,7 @@ form{
     font-weight: 700;
     background: transparent;
     padding: 0.5rem 2rem;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto ;
     border: 4px solid white;
     border-radius: 20px;
     min-width: 50%;
@@ -153,18 +176,19 @@ form{
       color: black;
       background: white;
     }
-    @media screen and (max-height: 800px) {
-      margin: 0 auto
+    @media screen and (max-width: 1024px){
+      background: $red;
+      max-width: 50%;
     }
   }
-  @media screen and (max-width: 1024px) {
-    width: 90%;
-    gap: 30px;
-    margin: 2rem auto;
-    padding: 1rem
+
+  @media screen and  (max-width: 1024px) {
+    all: unset;
+    width: 70%;
+    margin: auto;
   }
-  @media screen and (max-width: 360px) {
-    margin: 1rem auto
+  @media screen and (max-width: 600px) {
+    width: 90%;
   }
 }
 </style>

@@ -173,6 +173,9 @@ header{
       width: 100px;
       height: 110px;
     }
+    @media screen and (max-height: 540px) {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 1024px){
@@ -216,6 +219,9 @@ header{
 }
 .header__wrapper.active{
   transform: translateX(0);
+  @media screen and (max-height: 450px) {
+    overflow: auto;
+  }
 }
 @keyframes shape {
   to {

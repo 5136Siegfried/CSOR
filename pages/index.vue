@@ -1,5 +1,6 @@
 <template>
   <div class="site">
+      <img class="logo" src="~/assets/img/logo.jpg" alt="Logo du CSOR">
     <VueSlickCarousel class="slider" v-bind="slickOptions">
       <img src="~/assets/img/slider_home/1-min.jpg" alt="Photo du CSOR">
       <img src="~/assets/img/slider_home/2-min.jpg" alt="Photo du CSOR">
@@ -10,7 +11,6 @@
       <img src="~/assets/img/slider_home/7-min.jpg" alt="Photo du CSOR">
     </VueSlickCarousel>
     <div class="site__wrapper">
-      <img class="logo" src="~/assets/img/logo.jpg" alt="Logo du CSOR">
       <div class="content">
         <DefaultHome v-if="display === 'default'" class="default" />
         <Contact-form v-if="display === 'mail'" class="form" />
@@ -78,69 +78,71 @@ export default {
   display: none;
   @media screen and (max-width: 1024px) {
     display: block;
-    //position: absolute;
-    //top: 30px;
-    margin: 30px 0 0 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    object-fit: contain;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+  transform: translateX(-50%);
+    z-index: 15;
   }
-  @media screen and (max-width: 355px) {
-    width: 100px;
-  }
-  @media screen and (max-width: 267px) {
-    width: 70px;
-  }
-  @media screen and (max-width: 246px) {
-    width: 50px;
-  }
-  @media screen and (max-height: 835px)  {
-    width: 70px;
-  }
-  @media screen and (max-height: 730px)  {
-    display: none;
+}
+.slider{
+  @media screen and (max-width: 1024px) {
+    height: 225px;
   }
 }
 .site{
   height: calc(100vh - 80px); // header (80px)
-  @media screen and (max-width: 1024px) {
-    min-height: 100vh;
-  }
   &__wrapper{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
+
+    @media screen and (max-width: 1024px) {
+      position: relative;
+      height: unset;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    height: unset;
+    min-height: 100vh;
   }
 }
 .content{
+  position: relative;
   width: 50%;
   height: 100%;
   margin-left: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 2rem;
   @media screen and (max-width: 1024px) {
     width: 100%;
-    height: unset;
-    margin: 0;
-    justify-content: unset;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    color: $blue;
+    grid-template-areas:
+  "icons"
+  "home";
   }
-  @media screen and (max-width: 400px) {
-    align-items: center;
+  @media screen and (max-width: 530px) {
+    width: 90%;
   }
 }
 .icons {
+  grid-area: icons;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
   color: white;
   cursor: pointer;
-  margin-right: 50px;
+  //margin-right: 50px;
 
   li {
     margin: 0 15px;
@@ -154,47 +156,24 @@ export default {
     background: rgba(0,0,0,0.4);
     > a{
       height: 100%;
+    > img{
+      width: 100%;
+      height: 100%;
+    }
     }
     > img{
       width: 100%;
       height: 100%;
     }
+
     @media screen and (max-width: 1024px) {
-      margin: 0 15px;
-    }
-    @media screen and (max-width: 580px) {
       width: 40px;
       height: 40px;
-      padding: 8px;
-    }
-    @media screen and (max-width: 360px) {
-      margin: 20px
     }
   }
+
   @media screen and (max-width: 1024px) {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  flex-wrap: nowrap;
-}
-  @media screen and (max-width: 400px) {
-    margin: 0;
-  }
-  @media screen and (max-width: 307px) {
-    bottom: 10px;
-  }
-  @media screen and (max-height: 835px) {
-    bottom: -20px;
-  }
-}
-.form{
-  width: 60%;
-  @media screen and (max-width: 630px) {
-    width: 75%;
-  }
-  @media screen and (max-width: 470px) {
-    width: 90%;
+    margin-top: 30px
   }
 }
 .award{
@@ -203,6 +182,7 @@ export default {
   left: 0;
   @media screen and (max-width: 1024px) {
     width: 150px;
+    top: -130px
   }
   @media screen and (max-width: 520px) {
     display: none;

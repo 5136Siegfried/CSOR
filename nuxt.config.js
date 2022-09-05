@@ -16,7 +16,9 @@ export default {
         hid: 'description',
         name: 'description',
         content: 'Tout au long de l’année, nous réalisons des maraudes sanitaires plusieurs fois par semaine en' +
-          ' soirée. Au delà du soin, nos bénévoles ont un rôle préventif et informatif. Nous avons à coeur d’établir' +
+          ' soirée dans le centre ville de Bordeaux. Au delà du soin, nos bénévoles ont un rôle préventif et' +
+          ' informatif. Nous avons à coeur' +
+          ' d’établir' +
           ' et de maintenir un réseau partenarial avec plusieurs associations caritatives, des établissements de' +
           ' soins et des travailleurs sociaux.' +
           'Au cours de l\'année, des professionnel.le.s du soin et de la santé mettent à disposition leurs compétences pour transmettre aux bénévoles du CSOR des notions importantes et utiles pour nos maraudes.'
