@@ -83,6 +83,8 @@ h3{
     width: unset;
     color: $blue;
     background: unset;
+    margin: 0 auto;
+    padding: 0 2rem;
 
     p{
       &.tel{
@@ -104,6 +106,10 @@ h3{
       color: white;
       padding: 0.5em 2em;
       border-radius: 30px;
+      &:hover{
+        color: white;
+        background: $red;
+      }
     }
   }
 }

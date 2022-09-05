@@ -179,6 +179,11 @@ form{
     @media screen and (max-width: 1024px){
       background: $red;
       max-width: 50%;
+
+      &:hover{
+        color: white;
+        background: $red;
+      }
     }
   }
 

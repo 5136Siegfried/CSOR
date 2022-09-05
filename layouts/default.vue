@@ -13,6 +13,12 @@ export default {
 </script>
 
 <style lang="scss">
+*{
+  -webkit-tap-highlight-color: transparent
+}
+img{
+  user-select: none;
+}
 Footer{
   //position: fixed;
   //bottom: 0;

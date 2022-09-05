@@ -114,6 +114,10 @@ a{
   @media screen and (max-width: 1024px) {
     color: white;
     background: $red;
+    &:hover{
+      color: white;
+      background: $red;
+    }
   }
 }
 </style>

@@ -15,19 +15,19 @@
         <DefaultHome v-if="display === 'default'" class="default" />
         <Contact-form v-if="display === 'mail'" class="form" />
         <Phone v-if="display === 'phone'" class="form" />
-        <ul class="icons">
-          <li @click="displayBlock('mail')">
+        <div class="icons">
+          <div @click="displayBlock('mail')">
             <img src="~/assets/img/icons/mail.svg" alt="Email">
-          </li>
-          <li @click="displayBlock('phone')">
+          </div>
+          <div @click="displayBlock('phone')">
             <img src="~/assets/img/icons/phone.svg" alt="Téléphone">
-          </li>
-          <li>
+          </div>
+          <div>
             <a href="https://www.facebook.com/CollectifSecoursOrientationdeRue/" target="_blank">
               <img src="~/assets/img/icons/fb.svg" alt="Facebook">
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
       <a href="https://www.facebook.com/CollectifSecoursOrientationdeRue/posts/346357860405718" target="_blank">
         <img class="award" src="~/assets/img/prix_jeunes_asso.png" alt="logo prix des jeunes asso">
@@ -111,6 +111,7 @@ export default {
   }
 }
 .content{
+  user-select: none;
   position: relative;
   width: 50%;
   height: 100%;
@@ -142,9 +143,10 @@ export default {
   padding-bottom: 30px;
   color: white;
   cursor: pointer;
+  user-select: none;
   //margin-right: 50px;
 
-  li {
+  > div {
     margin: 0 15px;
     display: flex;
     justify-content: center;
@@ -154,9 +156,12 @@ export default {
     width: 50px;
     height: 50px;
     background: rgba(0,0,0,0.4);
+    user-select: none;
     > a{
+      user-select: none;
       height: 100%;
     > img{
+      user-select: none;
       width: 100%;
       height: 100%;
     }
