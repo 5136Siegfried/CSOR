@@ -113,24 +113,26 @@ form{
     text-transform: uppercase;
     color: white;
     text-align: left;
-    font-size: 3vw;
+    font-size: 2.5vw;
     line-height: 3vw;
     font-weight: 500;
+    > span{
+      font-size: 3vw;
+      display: block;
+      font-weight: 700;
+    }
     @media screen and (max-width: 1024px) {
       color: $blue;
       font-weight: 500;
-      font-size: 10vw;
+      font-size: 9vw;
       text-align: left;
       line-height: 13vw;
 
       >span{
+        font-size: 10vw;
         font-weight: 700;
         display: block;
       }
-    }
-    > span{
-      display: block;
-      font-weight: 700;
     }
   }
   input, textarea{

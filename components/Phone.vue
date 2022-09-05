@@ -4,7 +4,8 @@
     <p class="tel">06 73 60 62 65</p>
     <a href="tel:+0673606265" class="call">Appeler</a>
     <p class="info">
-      Si on ne décroche pas, laissez un message ou bien un texto,
+      Si on ne décroche pas, <br>
+      laissez un message ou bien un texto,<br>
       on vous répondra dès qu’on peut !
     </p>
   </div>
@@ -21,9 +22,14 @@ h3{
   text-transform: uppercase;
   color: white;
   text-align: left;
-  font-size: 3vw;
+  font-size: 2vw;
   line-height: 3vw;
   font-weight: 500;
+  > span{
+    display: block;
+    font-size: 3vw;
+    font-weight: 700;
+  }
   @media screen and (max-width: 1024px) {
     color: $blue;
     font-weight: 500;
@@ -32,13 +38,10 @@ h3{
     line-height: 13vw;
 
     >span{
+      font-size: 10vw;
       font-weight: 700;
       display: block;
     }
-  }
-  > span{
-    display: block;
-    font-weight: 700;
   }
 }
 .phoneBox{
@@ -54,7 +57,7 @@ h3{
     margin: 3rem auto;
     text-align: center;
     font-size: 2rem;
-    color: black;
+    color: $blue;
     background: rgba(181, 177, 177, 0.9);
     border-radius: 10px;
   }
@@ -77,6 +80,10 @@ h3{
       color: black;
     }
   }
+  p{
+    text-align: center;
+    font-weight: 700;
+  }
 }
 @media screen and (max-width: 1024px) {
   .phoneBox{
@@ -97,7 +104,6 @@ h3{
         background: lighten($blue, 60%);
       }
       &.info{
-        width: 60%;
         margin: 3rem auto
       }
     }
