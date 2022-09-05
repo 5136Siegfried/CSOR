@@ -12,22 +12,22 @@
     </VueSlickCarousel>
     <div class="site__wrapper">
       <div class="content">
-        <DefaultHome v-if="display === 'default'" class="default" />
-        <Contact-form v-if="display === 'mail'" class="form" />
+        <DefaultHome v-if="display === 'default'" class="default"/>
+        <Contact-form v-if="display === 'mail'" class="form"/>
         <Phone v-if="display === 'phone'" class="form" />
-        <div class="icons">
-          <div @click="displayBlock('mail')">
+        <ul class="icons">
+          <li @click="displayBlock('mail')"  :class="{'active' : display === 'mail'}">
             <img src="~/assets/img/icons/mail.svg" alt="Email">
-          </div>
-          <div @click="displayBlock('phone')">
+          </li>
+          <li @click="displayBlock('phone')" :class="{'active' : display === 'phone'}">
             <img src="~/assets/img/icons/phone.svg" alt="Téléphone">
-          </div>
-          <div>
+          </li>
+          <li>
             <a href="https://www.facebook.com/CollectifSecoursOrientationdeRue/" target="_blank">
               <img src="~/assets/img/icons/fb.svg" alt="Facebook">
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
       <a href="https://www.facebook.com/CollectifSecoursOrientationdeRue/posts/346357860405718" target="_blank">
         <img class="award" src="~/assets/img/prix_jeunes_asso.png" alt="logo prix des jeunes asso">
@@ -146,7 +146,7 @@ export default {
   user-select: none;
   //margin-right: 50px;
 
-  > div {
+  > li {
     margin: 0 15px;
     display: flex;
     justify-content: center;
@@ -155,7 +155,7 @@ export default {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0, 0.4);
     user-select: none;
     > a{
       user-select: none;
@@ -171,6 +171,10 @@ export default {
       height: 100%;
     }
 
+    &.active{
+      background: $blue;
+    }
+
     @media screen and (max-width: 1024px) {
       width: 40px;
       height: 40px;
@@ -178,7 +182,11 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
-    margin-top: 30px
+    margin-top: 30px;
+
+    > li {
+      background: rgba(0, 47, 135, 0.4);
+    }
   }
 }
 .award{
