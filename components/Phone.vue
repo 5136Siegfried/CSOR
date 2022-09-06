@@ -57,7 +57,7 @@ h3{
     margin: 3rem auto;
     text-align: center;
     font-size: 2rem;
-    color: $blue;
+    color: black;
     background: rgba(181, 177, 177, 0.9);
     border-radius: 10px;
   }

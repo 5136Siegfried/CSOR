@@ -78,12 +78,12 @@ p{
     font-weight: 700;
   }
   .bienvenue{
-    @media screen and (max-width: 1024px) {
+    //@media screen and (max-width: 1024px) {
       display: block;
       font-size: calc(3rem + 1vh);
       font-weight: 700;
       text-transform: uppercase;
-    }
+    //}
   }
 }
 .separator{
