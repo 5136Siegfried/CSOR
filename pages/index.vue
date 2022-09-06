@@ -136,7 +136,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
   color: white;
   cursor: pointer;
   user-select: none;
@@ -179,6 +178,7 @@ export default {
 
   @media screen and (max-width: 1024px) {
     margin-top: 30px;
+    padding-bottom: 30px;
 
     > li {
       background: rgba(0, 47, 135, 0.4);
