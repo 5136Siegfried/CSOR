@@ -16,10 +16,13 @@
         <Contact-form v-if="display === 'mail'" class="form"/>
         <Phone v-if="display === 'phone'" class="form" />
         <ul class="icons">
-          <li @click="displayBlock('mail')"  :class="{'active' : display === 'mail'}">
+          <li @click="display = 'default'" :class="{'active' : display === 'default'}">
+            <img src="~/assets/img/icons/home.svg" alt="Home">
+          </li>
+          <li @click="display = 'mail'"  :class="{'active' : display === 'mail'}">
             <img src="~/assets/img/icons/mail.svg" alt="Email">
           </li>
-          <li @click="displayBlock('phone')" :class="{'active' : display === 'phone'}">
+          <li @click="display = 'phone'" :class="{'active' : display === 'phone'}">
             <img src="~/assets/img/icons/phone.svg" alt="Téléphone">
           </li>
           <li>
@@ -62,13 +65,6 @@ export default {
     }
   },
   methods: {
-    displayBlock (target) {
-      if (this.display !== target) {
-        this.display = target
-      } else {
-        this.display = 'default'
-      }
-    }
   }
 }
 </script>

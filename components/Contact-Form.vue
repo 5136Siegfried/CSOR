@@ -124,7 +124,7 @@ form{
     @media screen and (max-width: 1024px) {
       color: $blue;
       font-weight: 500;
-      font-size: 9vw;
+      font-size: 8vw;
       text-align: left;
       line-height: 13vw;
 

@@ -33,7 +33,7 @@ h3{
   @media screen and (max-width: 1024px) {
     color: $blue;
     font-weight: 500;
-    font-size: 8vw;
+    font-size: 7vw;
     text-align: left;
     line-height: 13vw;
 
@@ -100,7 +100,7 @@ h3{
         width: unset;
         margin: 3rem auto;
         padding: 1rem 2rem;
-        border-radius: 30px;
+        border-radius: 10px;
         background: lighten($blue, 60%);
       }
       &.info{
