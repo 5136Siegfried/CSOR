@@ -107,7 +107,6 @@ export default {
   }
 }
 .content{
-  user-select: none;
   position: relative;
   width: 50%;
   height: 100%;
@@ -193,7 +192,7 @@ export default {
     width: 150px;
     top: -130px
   }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 415px) {
     display: none;
   }
 }

@@ -60,6 +60,7 @@ h3{
     color: black;
     background: rgba(181, 177, 177, 0.9);
     border-radius: 10px;
+    user-select: all;
   }
   .call{
     display: block;

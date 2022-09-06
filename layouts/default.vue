@@ -16,14 +16,4 @@ export default {
 *{
   -webkit-tap-highlight-color: transparent
 }
-img{
-  user-select: none;
-}
-Footer{
-  //position: fixed;
-  //bottom: 0;
-  //@media screen and (max-width: 1024px) {
-  //  position: relative;
-  //}
-}
 </style>
