@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-      <img class="logo" src="~/assets/img/logo.jpg" alt="Logo du CSOR">
+      <img class="logo" src="~/assets/img/logo.svg" alt="Logo du CSOR">
     <VueSlickCarousel class="slider" v-bind="slickOptions">
       <img src="~/assets/img/slider_home/1-min.jpg" alt="Photo du CSOR">
       <img src="~/assets/img/slider_home/2-min.jpg" alt="Photo du CSOR">
@@ -74,7 +74,7 @@ export default {
   display: none;
   @media screen and (max-width: 1024px) {
     display: block;
-    width: 150px;
+    width: 130px;
     position: absolute;
     top: 20px;
     left: 50%;

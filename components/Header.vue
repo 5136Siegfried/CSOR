@@ -13,7 +13,7 @@
           <li><a href="/orientation">Orientations</a></li>
         </ul>
       </nav>
-      <a href="/"><img class="logo" src="~/assets/img/logo.jpg" alt="logo du csor"></a>
+      <a href="/"><img class="logo" src="~/assets/img/logo.svg" alt="logo du csor"></a>
       <nav class="nav_right">
         <ul>
           <li><a href="/join">Nous <span>rejoindre</span></a></li>
