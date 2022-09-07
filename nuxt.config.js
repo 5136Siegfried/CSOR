@@ -26,7 +26,16 @@ export default {
       {
         name: 'format-detection',
         content: 'telephone=no'
-      }
+      },
+      { hid: 'og:title', property: 'og:title', content: 'Collectif de Secours & Orientation de Rue' },
+      { hid: 'og:description', property: 'og:description', content: 'Tout au long de l’année, nous réalisons des maraudes sanitaires plusieurs fois par semaine en' +
+          ' soirée dans le centre ville de Bordeaux. Au delà du soin, nos bénévoles ont un rôle préventif et' +
+          ' informatif. Nous avons à coeur' +
+          ' d’établir' +
+          ' et de maintenir un réseau partenarial avec plusieurs associations caritatives, des établissements de' +
+          ' soins et des travailleurs sociaux.' +
+          'Au cours de l\'année, des professionnel.le.s du soin et de la santé mettent à disposition leurs compétences pour transmettre aux bénévoles du CSOR des notions importantes et utiles pour nos maraudes.' },
+      { hid: 'og:image', property: 'og:image', content: "~/assets/img/logo.svg"}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logo2.svg' },
