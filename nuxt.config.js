@@ -35,7 +35,7 @@ export default {
           ' et de maintenir un réseau partenarial avec plusieurs associations caritatives, des établissements de' +
           ' soins et des travailleurs sociaux.' +
           'Au cours de l\'année, des professionnel.le.s du soin et de la santé mettent à disposition leurs compétences pour transmettre aux bénévoles du CSOR des notions importantes et utiles pour nos maraudes.' },
-      { hid: 'og:image', property: 'og:image', content: "~/assets/img/logo.svg"}
+      { hid: 'og:image', property: 'og:image', content: "https://csor.fr/_nuxt/img/logo.1068e06.svg"}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logo2.svg' },
