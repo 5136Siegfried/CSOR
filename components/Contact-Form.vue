@@ -1,5 +1,5 @@
 <template>
-  <form id="formJoin" @submit.prevent="sendMail" class="box">
+  <form id="formJoin" class="box" @submit.prevent="sendMail">
     <h3>Nous <span>contacter</span></h3>
     <input
       id="name"
@@ -72,7 +72,7 @@ export default {
         this.formMessage.text = 'Merci de renseigner toutes les informations.'
       } else {
         btn.disabled = true
-        btn.value = 'Envoie du message ...'
+        btn.value = 'Envoi du message ... '
         const data = {
           service_id: 'service_60ovomj',
           template_id: 'template_9dq9hru',
@@ -90,7 +90,17 @@ export default {
               this.formMessage.text = 'Votre message a bien été envoyé.'
               btn.value = 'Envoyer'
               btn.disabled = false
+            } else {
+              this.formMessage.error = true
+              this.formMessage.text =
+                'Nous somme désolé, une erreur est survenue. Merci de nous contacter par mail au : csor.bx@gmail.com'
             }
+          })
+          .catch((error) => {
+            console.log(error.message)
+            this.formMessage.error = true
+            this.formMessage.text =
+              'Nous somme désolé, une erreur est survenue. Merci de nous contacter par mail au : csor.bx@gmail.com'
           })
       }
     }

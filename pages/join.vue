@@ -104,7 +104,17 @@ export default {
               this.formMessage.text = 'Votre message a bien été envoyé.'
               btn.value = 'Et hop c\'est parti !'
               btn.disabled = false
+            } else {
+              this.formMessage.error = true
+              this.formMessage.text =
+                'Nous somme désolé, une erreur est survenue. Merci de nous contacter par mail au : csor.bx@gmail.com'
             }
+          })
+          .catch((error) => {
+            console.log(error.message)
+            this.formMessage.error = true
+            this.formMessage.text =
+              'Nous somme désolé, une erreur est survenue. Merci de nous contacter par mail au : csor.bx@gmail.com'
           })
       }
     }
