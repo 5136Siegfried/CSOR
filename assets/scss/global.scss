@@ -82,6 +82,9 @@ textarea{
   @media screen and(max-width: 1024px){
     min-height: calc(100vh - 183px); // 183px = footer mobile
   }
+  @media screen and (min-width: 1024px) {
+    min-height: calc(100vh - 121px);
+  }
   &__wrapper{
   max-width: 1920px;
   margin: auto;
