@@ -16,9 +16,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.site{
-  min-height: calc(100vh - 100px);
-}
 .site__wrapper{
   height: calc(70vh - 100px);
   .content{
