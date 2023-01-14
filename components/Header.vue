@@ -9,8 +9,8 @@
         <ul>
           <li><a href="/about">Qui sommes-nous ?</a></li>
           <li><a href="/actions">Nos actions</a></li>
-          <li><a href="/news">Les actus</a></li>
           <li><a href="/orientation">Orientations</a></li>
+          <li><a href="/sponsors">Nos mécènes</a></li>
         </ul>
       </nav>
       <a href="/"><img class="logo" src="~/assets/img/logo.svg" alt="logo du csor"></a>
