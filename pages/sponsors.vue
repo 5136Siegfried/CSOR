@@ -26,7 +26,7 @@
             <p>
               En juillet, Éric Vatonne, responsable de la société Les Grandes Roues de France, propriétaire de la
               grande roue de Bordeaux, a effectué un don de 3 000 € à l’association.
-              Une donation qui permettra au CSOR, qui affirme être à la recherche de bénévoles, de financer des
+              Une donation qui permettra au CSOR de financer des
               formations pour ses membres mais surtout d’acheter du matériel médical.
             </p>
           </div>
