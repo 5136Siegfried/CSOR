@@ -3,6 +3,23 @@
     <div class="site__wrapper">
       <h1>Ils nous <br><b>soutiennent...</b></h1>
       <div class="content">
+          <section class="section">
+          <a href="https://www.bfconseil.org/" target="_blank" rel="noopener noreferrer" class="partner-link">
+          <img src="/_nuxt/img/logoBF.png" alt="Logo du partenaire" class="section__first_img">
+        <div class="section__content">
+            <h3>BF Conseil + :  Secours Canins et Félins - 2024/-</h3>
+            <p>
+                BF Conseil + assure la formation de nos bénévoles aux premiers secours canins et nous fournit des trousses de secours adaptées aux soins canins à destination des personnes vulnérables. 
+                Leur support nous permet d'améliorer nos approches et d'accompagner nos rencontres dans le suivi vétérinaire de leurs animaux. 
+                Les animaux sont une des dernières marches de sociabilisation des personnes en situation d'exclusion. Ils font même parfois passer le bien-être de leur animal avant le leur. Il est donc d'une importance cruciale de répondre à leurs besoins en s'entourant d'experts du sujet.
+                Merci à eux pour leur soutien et leur engagement. <strong><a href="https://www.bfconseil.org/" class="blue-link" target="_blank" rel="noopener noreferrer">En Savoir Plus</a></strong>
+            </p>
+        </div>
+    </a>
+    <a href="https://www.bfconseil.org/" target="_blank" rel="noopener noreferrer" class="partner-link">
+        <img src="/_nuxt/img/formationBF.jpeg" alt="Photo de fin de formation 2024" class="section__second_img" data-v-8db3fb60>
+    </a>
+</section>
         <section class="section">
           <img class="section__first_img" src="~/assets/img/logo-bms.png" alt="logo BMS">
           <div class="section__content">
