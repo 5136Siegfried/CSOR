@@ -1,4 +1,4 @@
-<template>
+r<template>
   <div class="modal_wrapper" @click.stop="closeModal">
     <div class="modal benevoles">
       <div class="closeModal" @click="$emit('close-modal')">
@@ -19,18 +19,18 @@
       </div>
       <div class="listeMembres">
         <FicheMembre
-          name="Alexandra"
-          age="30"
-          description="Cheffe d'équipe en prévention sécurité, pas toujours facile à suivre (en maraude... comme en discussion !)"
-          :img-url="require('~/assets/img/membres/alexandra.jpg')"
-          theme="1"
+          name="Siegfried"
+          age="34"
+          description="Equipier de la Protection civile. Il tir à l'arc nu et modèle le nuage informatique !"
+          :img-url="require('~/assets/img/membres/siegfried.jpg')"
+          theme="2"
         />
 
         <FicheMembre
-          name="Laura"
-          age="32"
-          description="Infirmière, trésorière au CSOR, couturière et championne de backgammon"
-          :img-url="require('~/assets/img/membres/laura.jpg')"
+          name="Thierry"
+          age="58"
+          description="Il est tailleur mais n'a pas un coeur de pierre"
+          :img-url="require('~/assets/img/membres/thierry.jpg')"
           theme="2"
         />
 
@@ -43,10 +43,10 @@
         />
 
         <FicheMembre
-          name="Stéphane"
-          age="39"
-          description="Négociateur foncier et philantrope en herbe"
-          :img-url="require('~/assets/img/membres/stephane.jpg')"
+          name="Philippe"
+          age="54"
+          description="Ancien (assistant) directeur régional de Dunder&mifflin, philantrope"
+          :img-url="require('~/assets/img/membres/philippe.jpg')"
           theme="2"
         />
 
@@ -75,10 +75,10 @@
         />
 
         <FicheMembre
-          name="Marc"
-          age="22"
-          description="Étudiant en médecine et grand fan de Tintin !"
-          :img-url="require('~/assets/img/membres/marc.jpg')"
+          name="Eric"
+          age="64"
+          description="Un cheminot qui a déraillé !"
+          :img-url="require('~/assets/img/membres/eric.jpg')"
           theme="2"
         />
       </div>
