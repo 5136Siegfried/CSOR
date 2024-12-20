@@ -31,7 +31,7 @@
         <h3>Où nous <b>trouver ?</b></h3>
         <p>
           Pendant nos maraudes sanitaires,<br>
-          les lundi, mercredi & vendredi, de 19h à 22h
+          les  mercredi de 19h à 22h, certains dimanches
         </p>
         <div class="circuits">
           <Circuit
@@ -50,7 +50,7 @@
           />
           <div class="circuit">
             <p>
-              Nous intervenons également ponctuellement sur d’autres secteurs
+              Nous intervenons également ponctuellement sur d’autres secteurs comme le Lac le Mardi
               en collaboration avec <b>Les Gratuits</b> et la <b>Maraude du Coeur</b>.
             </p>
             <div class="wrapper">
