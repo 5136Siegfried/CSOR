@@ -1,0 +1,34 @@
+name: Deploy Nuxt.js to Hostinger
+
+on:
+  push:
+    branches:
+      - main  # Déclenchement sur la branche principale
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  # Version compatible avec Nuxt.js
+
+    - name: Install dependencies
+      run: yarn install  # Utilise Yarn pour installer les dépendances
+
+    - name: Build Nuxt.js site
+      run: yarn generate  # Génère le site statique dans le dossier `dist`
+
+    - name: Deploy to Hostinger via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.2
+      with:
+        ftp-server: "ftp://ftp.votresite.com"
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: "./dist"  # Répertoire généré par `yarn generate`
+        server-dir: "/public_html"  # Répertoire sur le serveur Hostinger
