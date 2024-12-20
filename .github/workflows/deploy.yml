@@ -27,7 +27,7 @@ jobs:
     - name: Deploy to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.2
       with:
-        ftp-server: "ftp://ftp.votresite.com"
+        ftp-server: "ftp://ftp.csor.fr"
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: "./dist"  # Répertoire généré par `yarn generate`
